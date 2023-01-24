@@ -1,0 +1,39 @@
+body {
+  background-color: $grey;
+  font-family: $mainFont;
+  color: $white;
+  overflow-x: hidden; 
+
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .conenoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .stroke {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: solid 4px $cyan;
+      border-bottom: solid 4px $cyan;
+
+      div:first-child {
+        margin-right: -10px;
+      }
+
+      .revert {
+        transform: scaleX(-1);
+        margin-left: -10px;
+      }
+    }
+  }
+}
+
+
