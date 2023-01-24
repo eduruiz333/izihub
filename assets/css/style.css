@@ -1,7 +1,7 @@
 /* Table of content
 --------------------------------------------------- */
 .cyan {
-  color: red;
+  color: cyan;
 }
 
 /* Typography
@@ -91,8 +91,8 @@ body .conenoc .stroke {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: solid 4px red;
-  border-bottom: solid 4px red;
+  border-top: solid 4px cyan;
+  border-bottom: solid 4px cyan;
 }
 body .conenoc .stroke div:first-child {
   margin-right: -10px;
