@@ -1,5 +1,12 @@
 body {
     overflow-x: hidden;
+    background-color: $white-FFFFFF;
+
+    .card {
+        border-radius: $px-7;
+        filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+        background-color: $white-FFFFFF;
+    }
 
     .header {
         background-color: $blue-004165;
@@ -29,14 +36,15 @@ body {
         }
     }
 
-    .lead {
+    .sec-01 {
+
         background-color: $grey-E2E2E2;
 
         h1 {
             font-family: $futuraPTCondExtraBold;
             font-size: $px-30;
             background: url('../img/logo-izihub.png') 125px center no-repeat;
-            background-size: 17%;
+            background-size: 73px auto;
         }
 
         p {
@@ -48,5 +56,24 @@ body {
                 line-height: $px-22;
             }
         }
+
+        .card {
+            // width: 312px;
+            // height: 274px;
+        }
+
     }
+
+    .sec-02 {}
+
+    .sec-03 {
+        background-color: $grey-E2E2E2;
+    }
+
+    .sec-04 {}
+
+    .sec-05 {}
+
+    .sec-06 {}
+
 }
