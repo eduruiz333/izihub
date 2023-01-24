@@ -1,89 +1,78 @@
 @font-face {
-  font-family: poppins;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
-  font-weight:500;
-}
-@font-face {
-  font-family: poppinsBold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf');
-  font-weight:700;
-}
-@font-face {
-  font-family: poppinsItalic;
-  src: url('../fonts/Poppins/Poppins-Italic.ttf');
-  font-weight:500;
+    font-family: poppinsMedium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: futuraPTMedium;
-  src: url('../fonts/FuturaPT/FuturaPTMedium.otf');
-  font-weight:500;
-}
-@font-face {
-  font-family: futuraPTCondMedium;
-  src: url('../fonts/FuturaPT/FuturaPTCondMedium.otf');
-  font-weight:500;
-}
-@font-face {
-  font-family: futuraPTCondExtraBold;
-  src: url('../fonts/FuturaPT/FuturaPTCondExtraBold.otf');
-  font-weight:700;
+    font-family: poppinsSemiBold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
 }
 
-$poppins: 'Poppins', sans-serif;
+@font-face {
+    font-family: poppinsBold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: poppinsItalic;
+    src: url('../fonts/Poppins/Poppins-Italic.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: futuraPTMedium;
+    src: url('../fonts/FuturaPT/FuturaPTMedium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: futuraPTCondMedium;
+    src: url('../fonts/FuturaPT/FuturaPTCondMedium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: futuraPTCondExtraBold;
+    src: url('../fonts/FuturaPT/FuturaPTCondExtraBold.otf');
+    font-weight: 700;
+}
+
+$poppinsMedium: 'PoppinsMedium', sans-serif;
 $poppinsBold: 'PoppoppinsBoldpins', sans-serif;
+$poppinsSemiBold: 'poppinsSemiBold', sans-serif;
 $poppinsItalic: 'poppinsItalic', sans-serif;
 $futuraPTMedium: 'futuraPTMedium', sans-serif;
 $futuraPTCondMedium: 'futuraPTCondMedium', sans-serif;
 $futuraPTCondExtraBold: 'futuraPTCondExtraBold', sans-serif;
 
-.poppins {
-  font-family: $poppins;
+.poppinsMedium {
+    font-family: $poppinsMedium;
 }
+
 .poppinsBold {
-  font-family: $poppinsBold;
+    font-family: $poppinsBold;
 }
+
 .poppinsItalic {
-  font-family: $poppinsItalic;
+    font-family: $poppinsItalic;
 }
 
 .futuraPTMedium {
-  font-family: $futuraPTMedium;
+    font-family: $futuraPTMedium;
 }
+
 .futuraPTCondMedium {
-  font-family: $futuraPTCondMedium;
+    font-family: $futuraPTCondMedium;
 }
+
 .futuraPTCondExtraBold {
-  font-family: $futuraPTCondExtraBold;
+    font-family: $futuraPTCondExtraBold;
 }
 
 body {
-  font-family: $poppins;
+    font-family: $poppinsMedium;
+    color: $black-333333;
 }
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: .8rem;
-}
-
-h6 {
-  font-size: .6rem;
-}
-
-
-

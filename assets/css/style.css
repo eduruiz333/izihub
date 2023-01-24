@@ -3,9 +3,14 @@
 /* Typography
 --------------------------------------------------- */
 @font-face {
-  font-family: poppins;
-  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-family: poppinsMedium;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
   font-weight: 500;
+}
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
 }
 @font-face {
   font-family: poppinsBold;
@@ -32,8 +37,8 @@
   src: url("../fonts/FuturaPT/FuturaPTCondExtraBold.otf");
   font-weight: 700;
 }
-.poppins {
-  font-family: "Poppins", sans-serif;
+.poppinsMedium {
+  font-family: "PoppinsMedium", sans-serif;
 }
 
 .poppinsBold {
@@ -57,31 +62,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: 0.8rem;
-}
-
-h6 {
-  font-size: 0.6rem;
+  font-family: "PoppinsMedium", sans-serif;
+  color: #333333;
 }
 
 /* Header
@@ -91,8 +73,58 @@ h6 {
 body {
   overflow-x: hidden;
 }
+body .header {
+  background-color: #004165;
+}
+body .header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "poppinsSemiBold", sans-serif;
+  font-size: 1rem;
+}
+body .header a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+body .header figure {
+  margin: 0;
+}
+body .header .logo-izihub {
+  width: 50%;
+}
+body .header .logo-certisign {
+  width: 27%;
+}
+body .lead {
+  background-color: #E2E2E2;
+}
+body .lead h1 {
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-size: 1.875rem;
+  background: url("../img/logo-izihub.png") 125px center no-repeat;
+  background-size: 17%;
+}
+body .lead p {
+  font-family: "PoppinsMedium", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+body .lead p.card-text {
+  line-height: 1.375rem;
+}
 
 /* Footer
 --------------------------------------------------- */
 /* Responsive
 --------------------------------------------------- */
+@media (min-width: 960px) {
+  body .header {
+    border-bottom: solid 3px #046673;
+  }
+  body .header .logo-izihub {
+    width: auto;
+  }
+  body .header .logo-certisign {
+    width: auto;
+  }
+}

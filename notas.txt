@@ -1,0 +1,12 @@
+############################################################################################################
+############################################## TRAMPOS & JOBS ##############################################
+############################################################################################################
+
+¯/_(ツ)_/¯
+++ PLUS ++
+Substituindo o plugin Beautify pelo comando nativo do VSCOD
+
+On Windows Shift + Alt + F.
+On Mac Shift + Option + F.
+On Linux Ctrl + Shift + I.
+Selecionar todas as ocorrências em um arquivo: Ctrl + Shift + J

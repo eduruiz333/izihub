@@ -2,13 +2,29 @@
 @media (min-width: 320px) {}
 
 // s — Small Screens
-@media (min-width: 640px) { }
+@media (min-width: 640px) {}
 
 // m — Medium Screens
-@media (min-width: 960px) { }
+@media (min-width: 960px) {
+    body {
+        .header {
+            border-bottom: solid 3px $green-046673;
+
+            .logo-izihub {
+                width: auto;
+            }
+
+            .logo-certisign {
+                width: auto;
+            }
+        }
+
+    }
+
+}
 
 // l — Large Screens
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {}
 
 // xl — Extra Large Screens
 @media (min-width: 1600px) {}

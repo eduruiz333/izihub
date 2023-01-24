@@ -1,5 +1,52 @@
 body {
-  overflow-x: hidden; 
+    overflow-x: hidden;
+
+    .header {
+        background-color: $blue-004165;
+
+        a {
+            color: $white-FFFFFF;
+            text-decoration: none;
+            font-family: $poppinsSemiBold;
+            font-size: $px-16;
+
+            &:hover {
+                color: $white-FFFFFF;
+                text-decoration: underline;
+            }
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .logo-izihub {
+            width: 50%;
+        }
+
+        .logo-certisign {
+            width: 27%;
+        }
+    }
+
+    .lead {
+        background-color: $grey-E2E2E2;
+
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-30;
+            background: url('../img/logo-izihub.png') 125px center no-repeat;
+            background-size: 17%;
+        }
+
+        p {
+            font-family: $poppinsMedium;
+            font-size: $px-18;
+            line-height: $px-28;
+
+            &.card-text {
+                line-height: $px-22;
+            }
+        }
+    }
 }
-
-
