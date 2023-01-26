@@ -3,6 +3,11 @@
 /* Typography
 --------------------------------------------------- */
 @font-face {
+  font-family: poppinsLight;
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 500;
+}
+@font-face {
   font-family: poppinsMedium;
   src: url("../fonts/Poppins/Poppins-Medium.ttf");
   font-weight: 500;
@@ -37,6 +42,10 @@
   src: url("../fonts/FuturaPT/FuturaPTCondExtraBold.otf");
   font-weight: 700;
 }
+.poppinsLight {
+  font-family: "poppinsLight", sans-serif;
+}
+
 .poppinsMedium {
   font-family: "PoppinsMedium", sans-serif;
 }
@@ -76,9 +85,35 @@ body {
 }
 body .card {
   border-radius: 0.438rem;
+  background-color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
-  background-color: #FFFFFF;
+}
+body .btn {
+  width: 100%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  border: none;
+  background-color: #037887;
+  font-family: "PoppinsMedium", sans-serif;
+}
+body .btn:hover {
+  background-color: #004165;
+}
+body .btn:active, body .btn:focus, body .btn:active:focus {
+  background-color: #004165;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 body .header {
   background-color: #004165;
@@ -119,21 +154,218 @@ body .sec-01 p {
 body .sec-01 p.card-text {
   line-height: 1.375rem;
 }
+body .sec-01 .card.lead {
+  width: calc(3.125rem * 6 - 0.625rem);
+  font-family: "PoppinsMedium", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+body .sec-01 .btn {
+  font-size: 1rem;
+}
+body .sec-01 .btn span {
+  background: url("../img/Icon-arrow-right.png") right center no-repeat;
+  padding-right: 1.563rem;
+}
+body .sec-01 .btn.disabled {
+  background-color: #E7E7E7;
+  color: #333333;
+}
+body .sec-01 .btn.disabled span {
+  opacity: 0.4;
+}
+body .sec-01 input {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  border: none;
+  border-bottom: solid 2px #CCCCCC;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+body .sec-01 input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: solid 2px #CCCCCC;
+}
+body .sec-01 input::-webkit-input-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input::-moz-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input:-ms-input-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input::-ms-input-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input::placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input:-ms-input-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 input::-ms-input-placeholder {
+  font-family: "poppinsLight", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+body .sec-01 .stage .scroll {
+  padding: 0.625rem;
+  background-color: #FFFFFF;
+  -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+}
+body .sec-01 .stage .scroll .card {
+  width: calc(3.125rem * 4 - 0.938rem);
+}
+body .sec-01 .stage .scroll .card .card-body {
+  padding: 0.938rem 0.313rem;
+}
+body .sec-01 .stage .scroll .card .card-body figure {
+  margin-bottom: 0.625rem;
+}
+body .sec-01 .stage .scroll .card .card-body figure img {
+  height: 1.688rem;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+body .sec-01 .stage .scroll .card .card-body p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #444444;
+  text-align: center;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .sec-01 .stage .scroll .card .card-body a {
+  margin-top: 20px;
+}
 body .sec-03 {
   background-color: #E2E2E2;
 }
+
 /* Footer
 --------------------------------------------------- */
 /* Responsive
 --------------------------------------------------- */
-@media (min-width: 960px) {
+@media (min-width: 640px) {
   body .header {
-    border-bottom: solid 3px #046673;
+    border-bottom: solid 4px #046673;
   }
   body .header .logo-izihub {
     width: auto;
   }
   body .header .logo-certisign {
     width: auto;
+  }
+  body .sec-01 h1 {
+    font-size: calc(4.063rem);
+    background-position: 268px center;
+    background-size: auto;
+  }
+  body .sec-01 p {
+    font-size: 1.75rem;
+    line-height: calc(2.25rem);
+  }
+  body .sec-01 p.card-text {
+    line-height: 1.375rem;
+  }
+  body .sec-01 .card.lead {
+    width: calc(3.125rem * 6 + 0.75rem);
+    font-family: "PoppinsMedium", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  body .sec-01 .card.lead .card-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  body .sec-01 .btn {
+    font-size: 1rem;
+    height: calc(3rem);
+  }
+  body .sec-01 .btn span {
+    background: url("../img/Icon-arrow-right.png") right center no-repeat;
+    padding-right: 1.563rem;
+  }
+  body .sec-01 .btn.disabled {
+    background-color: #E7E7E7;
+    color: #333333;
+  }
+  body .sec-01 .btn.disabled span {
+    opacity: 0.4;
+  }
+  body .sec-01 input {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    border: none;
+    border-bottom: solid 2px #CCCCCC;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .sec-01 input:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: solid 2px #CCCCCC;
+  }
+  body .sec-01 input::-webkit-input-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input::-moz-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input:-ms-input-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input::-ms-input-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input::placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input:-ms-input-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+  }
+  body .sec-01 input::-ms-input-placeholder {
+    font-family: "poppinsLight", sans-serif;
+    font-size: 1rem;
+    color: #333333;
   }
 }

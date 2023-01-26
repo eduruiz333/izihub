@@ -1,4 +1,11 @@
 @font-face {
+    font-family: poppinsLight;
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+    font-weight: 500;
+}
+
+
+@font-face {
     font-family: poppinsMedium;
     src: url('../fonts/Poppins/Poppins-Medium.ttf');
     font-weight: 500;
@@ -40,6 +47,7 @@
     font-weight: 700;
 }
 
+$poppinsLight: 'poppinsLight', sans-serif;
 $poppinsMedium: 'PoppinsMedium', sans-serif;
 $poppinsBold: 'PoppoppinsBoldpins', sans-serif;
 $poppinsSemiBold: 'poppinsSemiBold', sans-serif;
@@ -47,6 +55,10 @@ $poppinsItalic: 'poppinsItalic', sans-serif;
 $futuraPTMedium: 'futuraPTMedium', sans-serif;
 $futuraPTCondMedium: 'futuraPTCondMedium', sans-serif;
 $futuraPTCondExtraBold: 'futuraPTCondExtraBold', sans-serif;
+
+.poppinsLight {
+    font-family: $poppinsLight;
+}
 
 .poppinsMedium {
     font-family: $poppinsMedium;

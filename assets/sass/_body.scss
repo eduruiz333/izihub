@@ -4,8 +4,32 @@ body {
 
     .card {
         border-radius: $px-7;
-        filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
         background-color: $white-FFFFFF;
+        filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    }
+
+    .btn {
+        width: 100%;
+        height: $px-40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        border: none;
+        background-color: $green-037887;
+        font-family: $poppinsMedium;
+
+        &:hover {
+            background-color: $blue-004165;
+        }
+
+        &:active,
+        &:focus,
+        &:active:focus {
+            background-color: $blue-004165;
+            border: none;
+            box-shadow: none;
+        }
     }
 
     .header {
@@ -58,22 +82,128 @@ body {
         }
 
         .card {
-            // width: 312px;
-            // height: 274px;
+            &.lead {
+                width: calc(#{$px-50} * 6 - #{$px-10});
+                font-family: $poppinsMedium;
+                font-size: $px-18;
+                line-height: $px-22;
+            }
         }
 
-    }
+        .btn {
+            font-size: $px-16;
 
-    .sec-02 {}
+
+            span {
+                background: url('../img/Icon-arrow-right.png') right center no-repeat;
+                padding-right: $px-25;
+            }
+
+            &.disabled {
+                background-color: $grey-E7E7E7;
+                color: $black-333333;
+
+                span {
+                    opacity: .4;
+                }
+            }
+        }
+
+        input {
+            font-family: $poppinsLight;
+            font-size: $px-16;
+            color: $black-333333;
+
+            border: none;
+            border-bottom: solid 2px $grey-CCCCCC;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: none;
+                border-bottom: solid 2px $grey-CCCCCC;
+            }
+
+
+            &::placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+
+            &:-ms-input-placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+
+            &::-ms-input-placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+        }
+
+        .stage {
+            // position: relative;
+            // width: 500px;
+            // height: 500px;
+
+            .scroll {
+                // position: absolute;
+                // width: 500px;
+                // height: 500px;
+                padding: $px-10;
+                background-color: $white-FFFFFF;
+                filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+
+                .card {
+                    width: calc(#{$px-50} * 4 - #{$px-15});
+
+                    .card-body {
+                        padding: $px-15 $px-5;
+
+                        figure {
+                            margin-bottom: $px-10;
+
+                            img {
+                                height: $px-27;
+                                width: auto;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        p {
+                            font-size: $px-16;
+                            line-height: $px-20;
+                            color: $grey-444444;
+                            text-align: center;
+
+                            display: block;
+                            display: -webkit-box;
+                            max-width: 100%;
+                            height: 100px;
+                            margin: 0 auto;
+                            -webkit-line-clamp: 5;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        a {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .sec-03 {
         background-color: $grey-E2E2E2;
     }
 
-    .sec-04 {}
 
-    .sec-05 {}
-
-    .sec-06 {}
 
 }
