@@ -336,6 +336,9 @@ body .sec-03 {
     font-size: 1rem;
     height: calc(3rem);
   }
+  body .sec-01 .btn.arrow-right-white:hover {
+    background-color: #004165;
+  }
   body .sec-01 .btn.arrow-right-white .comp-text {
     display: inline-block;
     margin-left: 0.188rem;
@@ -412,7 +415,6 @@ body .sec-03 {
     margin-bottom: 1.875rem;
   }
   body .sec-01 .stage .scroll .card .card-body figure img {
-    height: auto;
     margin: 0;
   }
   body .sec-01 .stage .scroll .card .card-body p {
