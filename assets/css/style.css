@@ -137,6 +137,28 @@ body .header .logo-izihub {
 body .header .logo-certisign {
   width: 27%;
 }
+body .owl-theme .owl-nav {
+  margin: 0 0 0.313rem 0;
+}
+body .owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent !important;
+  color: #FFF;
+  text-decoration: none;
+}
+body .owl-theme .owl-nav button span {
+  display: block;
+  font-size: 0;
+  width: 0.938rem;
+  height: 0.875rem;
+}
+body .owl-theme .owl-nav button.owl-prev span {
+  background: transparent url("../img/Icon-arrow-left.png") center center no-repeat !important;
+  margin-right: 1.25rem;
+}
+body .owl-theme .owl-nav button.owl-next span {
+  background: transparent url("../img/Icon-arrow-right.png") center center no-repeat !important;
+  margin-left: 1.25rem;
+}
 body .sec-01 {
   background-color: #E2E2E2;
 }
@@ -163,16 +185,21 @@ body .sec-01 .card.lead {
 body .sec-01 .btn {
   font-size: 1rem;
 }
-body .sec-01 .btn span {
-  background: url("../img/Icon-arrow-right.png") right center no-repeat;
+body .sec-01 .btn.arrow-right {
+  background: url("../img/Icon-arrow-right.png") 80% center no-repeat;
   padding-right: 1.563rem;
 }
 body .sec-01 .btn.disabled {
   background-color: #E7E7E7;
   color: #333333;
-}
-body .sec-01 .btn.disabled span {
   opacity: 0.4;
+}
+body .sec-01 .btn.arrow-right-white {
+  background: #037887 url("../img/Icon-arrow-white-right.png") 80% center no-repeat;
+  padding-right: 1.563rem;
+}
+body .sec-01 .btn.arrow-right-white .comp-text {
+  display: none;
 }
 body .sec-01 input {
   font-family: "poppinsLight", sans-serif;
@@ -225,13 +252,15 @@ body .sec-01 input::-ms-input-placeholder {
   color: #333333;
 }
 body .sec-01 .stage .scroll {
-  padding: 0.625rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  border-radius: 0.438rem;
   background-color: #FFFFFF;
-  -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
 }
 body .sec-01 .stage .scroll .card {
   width: calc(3.125rem * 4 - 0.938rem);
+  margin-bottom: 0.625rem;
 }
 body .sec-01 .stage .scroll .card .card-body {
   padding: 0.938rem 0.313rem;
@@ -307,16 +336,9 @@ body .sec-03 {
     font-size: 1rem;
     height: calc(3rem);
   }
-  body .sec-01 .btn span {
-    background: url("../img/Icon-arrow-right.png") right center no-repeat;
-    padding-right: 1.563rem;
-  }
-  body .sec-01 .btn.disabled {
-    background-color: #E7E7E7;
-    color: #333333;
-  }
-  body .sec-01 .btn.disabled span {
-    opacity: 0.4;
+  body .sec-01 .btn.arrow-right-white .comp-text {
+    display: inline-block;
+    margin-left: 0.188rem;
   }
   body .sec-01 input {
     font-family: "poppinsLight", sans-serif;
@@ -367,5 +389,39 @@ body .sec-03 {
     font-family: "poppinsLight", sans-serif;
     font-size: 1rem;
     color: #333333;
+  }
+  body .sec-01 .stage {
+    position: relative;
+    height: calc(3.125rem * 8.5);
+    overflow: hidden;
+  }
+  body .sec-01 .stage .scroll {
+    position: absolute;
+    left: 640px;
+    width: 920px;
+    padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+  }
+  body .sec-01 .stage .scroll .card {
+    width: calc(3.125rem * 5 + 1.563rem);
+    margin-bottom: 0.625rem;
+  }
+  body .sec-01 .stage .scroll .card .card-body {
+    padding: 0.938rem 0.938rem 1.25rem;
+  }
+  body .sec-01 .stage .scroll .card .card-body figure {
+    margin-bottom: 1.875rem;
+  }
+  body .sec-01 .stage .scroll .card .card-body figure img {
+    height: auto;
+    margin: 0;
+  }
+  body .sec-01 .stage .scroll .card .card-body p {
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+    text-align: left;
+    height: 130px;
+  }
+  body .sec-01 .stage .scroll .card .card-body a {
+    margin-top: 20px;
   }
 }

@@ -60,6 +60,44 @@ body {
         }
     }
 
+    .owl-theme {
+        .owl-nav {
+            [class*=owl-]:hover {
+                background: transparent !important;
+                color: #FFF;
+                text-decoration: none
+            }
+
+            margin: 0 0 $px-5 0;
+
+            button {
+                
+                span {
+                    display: block;
+                    font-size: 0;
+                    width: $px-15;
+                    height: $px-14;
+                }
+    
+                &.owl-prev {
+                    span {
+                        background: transparent url('../img/Icon-arrow-left.png') center center no-repeat !important;
+                        margin-right: $px-20;
+                    }
+                }
+    
+                &.owl-next {
+                    span {
+                        background: transparent url('../img/Icon-arrow-right.png') center center no-repeat !important;
+                        margin-left: $px-20;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
     .sec-01 {
 
         background-color: $grey-E2E2E2;
@@ -93,18 +131,23 @@ body {
         .btn {
             font-size: $px-16;
 
-
-            span {
-                background: url('../img/Icon-arrow-right.png') right center no-repeat;
+            &.arrow-right {
+                background: url('../img/Icon-arrow-right.png') 80% center no-repeat;
                 padding-right: $px-25;
             }
 
             &.disabled {
                 background-color: $grey-E7E7E7;
                 color: $black-333333;
+                opacity: .4;
+            }
+            
+            &.arrow-right-white {
+                background: $green-037887 url('../img/Icon-arrow-white-right.png') 80% center no-repeat;
+                padding-right: $px-25;
 
-                span {
-                    opacity: .4;
+                .comp-text {
+                    display: none;
                 }
             }
         }
@@ -153,12 +196,14 @@ body {
                 // position: absolute;
                 // width: 500px;
                 // height: 500px;
-                padding: $px-10;
+                padding: $px-10 $px-10 $px-10 $px-10;
+                border-radius: $px-7;
                 background-color: $white-FFFFFF;
-                filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+                filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
 
                 .card {
                     width: calc(#{$px-50} * 4 - #{$px-15});
+                    margin-bottom: $px-10;
 
                     .card-body {
                         padding: $px-15 $px-5;

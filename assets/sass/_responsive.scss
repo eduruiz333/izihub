@@ -52,17 +52,10 @@
                 font-size: $px-16;
                 height: calc(#{$px-40 + $px-8});
 
-                span {
-                    background: url('../img/Icon-arrow-right.png') right center no-repeat;
-                    padding-right: $px-25;
-                }
-
-                &.disabled {
-                    background-color: $grey-E7E7E7;
-                    color: $black-333333;
-
-                    span {
-                        opacity: .4;
+                &.arrow-right-white {
+                    .comp-text {
+                        display: inline-block;
+                        margin-left: $px-3;
                     }
                 }
             }
@@ -99,6 +92,50 @@
                     font-family: $poppinsLight;
                     font-size: $px-16;
                     color: $black-333333;
+                }
+            }
+
+            .stage {
+                position: relative;
+                height: calc(#{$px-50} * 8.5);
+                overflow: hidden;
+    
+                .scroll {
+                    position: absolute;
+                    left: 640px;
+                    width: 920px;
+
+                    padding: $px-30 $px-30 $px-30 $px-30;
+    
+                    .card {
+                        width: calc(#{$px-50} * 5 + #{$px-25});
+                        margin-bottom: $px-10;
+    
+                        .card-body {
+                            padding: $px-15 $px-15 $px-20;
+    
+                            figure {
+                                margin-bottom: $px-30;
+    
+                                img {
+                                    height: auto;
+                                    margin: 0;
+                                }
+                            }
+    
+                            p {
+                                font-size: $px-18;
+                                line-height: $px-27;
+                                text-align: left;
+    
+                                height: 130px;
+                            }
+    
+                            a {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
                 }
             }
 
