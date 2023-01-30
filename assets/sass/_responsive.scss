@@ -16,6 +16,16 @@
             }
         }
 
+        .owl-theme {
+            .owl-nav {
+                button {
+                    &.owl-next {
+                        margin-right: 240px;
+                    }
+                }
+            }
+        }
+
         .sec-01 {
 
             h1 {
@@ -107,8 +117,7 @@
                     position: absolute;
                     left: 640px;
                     width: 920px;
-
-                    padding: $px-30 $px-30 $px-30 $px-30;
+                    padding: $px-30 $px-30 $px-20;
     
                     .card {
                         width: calc(#{$px-50} * 5 + #{$px-25});
@@ -129,12 +138,7 @@
                                 font-size: $px-18;
                                 line-height: $px-27;
                                 text-align: left;
-    
                                 height: 130px;
-                            }
-    
-                            a {
-                                margin-top: 20px;
                             }
                         }
                     }
