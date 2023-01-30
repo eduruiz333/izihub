@@ -3,6 +3,11 @@
 
 // s — Small Screens
 @media (min-width: 640px) {
+    
+}
+
+// m — Medium Screens
+@media (min-width: 960px) {
     body {
         .header {
             border-bottom: solid 4px $green-046673;
@@ -148,9 +153,6 @@
         }
     }
 }
-
-// m — Medium Screens
-@media (min-width: 960px) {}
 
 // l — Large Screens
 @media (min-width: 1200px) {}

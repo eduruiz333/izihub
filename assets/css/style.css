@@ -300,7 +300,7 @@ body .sec-03 {
 --------------------------------------------------- */
 /* Responsive
 --------------------------------------------------- */
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   body .header {
     border-bottom: solid 4px #046673;
   }
