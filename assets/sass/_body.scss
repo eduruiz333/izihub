@@ -75,8 +75,9 @@ body {
                 span {
                     display: block;
                     font-size: 0;
-                    width: $px-15;
-                    height: $px-14;
+                    width: $px-16;
+                    height: $px-17;
+                    background-size: $px-14 $px-17 !important;
                 }
     
                 &.owl-prev {
@@ -235,6 +236,14 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .sec-02 {
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-26;
+            line-height: $px-30;
         }
     }
 

@@ -148,8 +148,9 @@ body .owl-theme .owl-nav [class*=owl-]:hover {
 body .owl-theme .owl-nav button span {
   display: block;
   font-size: 0;
-  width: 0.938rem;
-  height: 0.875rem;
+  width: 1rem;
+  height: 1.063rem;
+  background-size: 0.875rem 1.063rem !important;
 }
 body .owl-theme .owl-nav button.owl-prev span {
   background: transparent url("../img/Icon-arrow-left.png") center center no-repeat !important;
@@ -291,6 +292,11 @@ body .sec-01 .stage .scroll .card .card-body p {
 }
 body .sec-01 .stage .scroll .card .card-body a {
   margin-top: 20px;
+}
+body .sec-02 h1 {
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
 }
 body .sec-03 {
   background-color: #E2E2E2;
