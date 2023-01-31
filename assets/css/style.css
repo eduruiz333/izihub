@@ -51,7 +51,7 @@
 }
 
 .poppinsBold {
-  font-family: "PoppoppinsBoldpins", sans-serif;
+  font-family: "poppinsBold", sans-serif;
 }
 
 .poppinsItalic {
@@ -141,7 +141,7 @@ body .owl-theme .owl-nav {
   margin: 0 0 0.313rem 0;
 }
 body .owl-theme .owl-nav [class*=owl-]:hover {
-  background: transparent !important;
+  background: transparent;
   color: #FFF;
   text-decoration: none;
 }
@@ -298,8 +298,33 @@ body .sec-02 h1 {
   font-size: 1.625rem;
   line-height: 1.875rem;
 }
+body .sec-02 h2 {
+  font-family: "poppinsBold", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
+}
+body .sec-02 p {
+  color: #444444;
+}
+body .sec-02 a {
+  margin-top: 50px;
+}
 body .sec-03 {
   background-color: #E2E2E2;
+}
+body .crop {
+  background-color: red !important;
+  height: 200px;
+  overflow: hidden;
+}
+body .create-btn-expand {
+  height: 40px;
+}
+body .create-btn-expand ::before {
+  content: "Ler mais";
+}
+body .create-btn-expand.less ::before {
+  content: "Ler menos";
 }
 
 /* Footer

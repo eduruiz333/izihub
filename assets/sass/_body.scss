@@ -63,7 +63,7 @@ body {
     .owl-theme {
         .owl-nav {
             [class*=owl-]:hover {
-                background: transparent !important;
+                background: transparent;
                 color: #FFF;
                 text-decoration: none
             }
@@ -97,7 +97,6 @@ body {
         }
         
     }
-
 
     .sec-01 {
 
@@ -245,12 +244,48 @@ body {
             font-size: $px-26;
             line-height: $px-30;
         }
+
+        h2 {
+            font-family: $poppinsBold;
+            font-size: $px-18;
+            line-height: $px-25;
+        }
+
+        p {
+            color: $grey-444444;
+        }
+
+        a {
+            margin-top: 50px;
+        }
+
+        
     }
 
     .sec-03 {
         background-color: $grey-E2E2E2;
     }
 
+    .crop {
+        background-color: red !important;
+        height: 200px;
+        overflow: hidden;
+    }
 
+    .create-btn-expand {
+        height: 40px;
+
+        ::before {
+            content: 'Ler mais';
+        }
+        
+         &.less {
+            ::before {
+                content: 'Ler menos';
+            }
+         }
+
+    }
 
 }
+
