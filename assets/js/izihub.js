@@ -25,31 +25,26 @@ jQuery("#carousel_02").owlCarousel({
 });
 
 
-const pegaaltura = document.querySelectorAll('.card-body')
-const pegabotoes = document.querySelectorAll('.create-btn-expand')
+const getContentHeight = document.querySelectorAll('.card-body')
+const createButton = document.querySelectorAll('.create-btn-expand')
 
-let btn = `<button class="btn btn-primary read-more"></button>`
+let btn = `<button class="btn btn-primary"></button>`
 
 
-for (let i = 0; i < pegaaltura.length; i++) {
-    const alturas = pegaaltura[i].offsetHeight
+for (let i = 0; i < getContentHeight.length; i++) {
+    const alturas = getContentHeight[i].offsetHeight
 
     if (alturas > 200) {
         
-        pegaaltura[i].classList.add('crop');
-        pegabotoes[i].innerHTML = btn
+        getContentHeight[i].classList.add('crop');
+        createButton[i].innerHTML = btn
         
-        pegabotoes[i].addEventListener("click", addButton);
+        createButton[i].addEventListener("click", addButton);
 
         function addButton() {
-            pegaaltura[i].classList.toggle('crop');
-            pegabotoes[i].classList.toggle('less');
-            
+            getContentHeight[i].classList.toggle('crop');
+            createButton[i].classList.toggle('less');
         }
-
-
     }
-
-
 }
 
