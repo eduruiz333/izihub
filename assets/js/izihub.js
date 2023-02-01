@@ -1,12 +1,12 @@
 jQuery("#carousel_02").owlCarousel({
     autoplay: false,
-    lazyLoad: true,
+    lazyLoad: false,
     loop: false,
     margin: 10,
     responsiveClass: true,
     autoHeight: false,
     autoplayTimeout: 7000,
-    smartSpeed: 800,
+    smartSpeed: 400,
     nav: true,
     responsive: {
         0: {
@@ -34,7 +34,7 @@ let btn = `<button class="btn btn-primary"></button>`
 for (let i = 0; i < getContentHeight.length; i++) {
     const alturas = getContentHeight[i].offsetHeight
 
-    if (alturas > 200) {
+    if (alturas > 165) {
         
         getContentHeight[i].classList.add('crop');
         createButton[i].innerHTML = btn
