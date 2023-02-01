@@ -80,18 +80,15 @@ jQuery("#carousel_03").owlCarousel({
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')
 const btn = `<button class="btn btn-primary"></button>`
-
 for (let i = 0; i < getContentHeight.length; i++) {
     const alturas = getContentHeight[i].offsetHeight
-
     if (alturas > 165) {
-        getContentHeight[i].classList.add('crop');
+        getContentHeight[i].classList.add('crop')
         createButton[i].innerHTML = btn
-        createButton[i].addEventListener("click", addButton);
-
+        createButton[i].addEventListener("click", addButton)
         function addButton() {
-            getContentHeight[i].classList.toggle('crop');
-            createButton[i].classList.toggle('less');
+            getContentHeight[i].classList.toggle('crop')
+            createButton[i].classList.toggle('less')
         }
     }
 }
