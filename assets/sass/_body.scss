@@ -101,7 +101,7 @@ body {
 
     .read-more {
         .crop {
-            height: calc(#{$px-50} * 3 - #{$px-15});;
+            height: calc(#{$px-50} * 3 + #{$px-15});
             overflow: hidden;
             position: relative;
             &::after {
@@ -142,7 +142,7 @@ body {
         .card-body {
             padding-top: 0;
             padding-bottom: 0;
-            min-height: calc(#{$px-50} * 3 - #{$px-15});;
+            min-height: calc(#{$px-50} * 3 + #{$px-15});
 
             :first-child {
                 margin-top: 1$px-10;

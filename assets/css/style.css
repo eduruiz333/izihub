@@ -162,7 +162,7 @@ body .owl-theme .owl-nav button.owl-next span {
   margin-left: 1.25rem;
 }
 body .read-more .crop {
-  height: calc(3.125rem * 3 - 0.938rem);
+  height: calc(3.125rem * 3 + 0.938rem);
   overflow: hidden;
   position: relative;
 }
@@ -197,7 +197,7 @@ body .read-more .create-btn-expand.less ::before {
 body .read-more .card-body {
   padding-top: 0;
   padding-bottom: 0;
-  min-height: calc(3.125rem * 3 - 0.938rem);
+  min-height: calc(3.125rem * 3 + 0.938rem);
 }
 body .read-more .card-body :first-child {
   margin-top: 1 0.625rem;
