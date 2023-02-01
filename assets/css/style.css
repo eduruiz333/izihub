@@ -351,10 +351,6 @@ body .sec-02 .card-body h2 {
 body .sec-02 .card-body p {
   color: #444444;
 }
-body .sec-03 {
-  background-color: #E2E2E2;
-}
-
 /* Footer
 --------------------------------------------------- */
 /* Responsive
@@ -484,5 +480,8 @@ body .sec-03 {
     line-height: 1.688rem;
     text-align: left;
     height: 130px;
+  }
+  body .sec-03 {
+    background-color: #E2E2E2;
   }
 }
