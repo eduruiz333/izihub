@@ -88,7 +88,7 @@ body .card {
   background-color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
-  margin-bottom: 3px;
+  margin-bottom: 0.188rem;
 }
 body .btn {
   width: 100%;
@@ -188,8 +188,20 @@ body .read-more .create-btn-expand {
   height: 2.5rem;
   margin: 0.938rem 0.313rem;
 }
+body .read-more .create-btn-expand .btn-read-more {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #005CB1;
+  font-family: "PoppinsMedium", sans-serif;
+  border: none;
+  padding-right: 1.25rem;
+  background: transparent url("../img/Icon-arrow-down.png") right center no-repeat;
+}
 body .read-more .create-btn-expand ::before {
   content: "Ler mais";
+}
+body .read-more .create-btn-expand.less .btn-read-more {
+  background: transparent url("../img/Icon-arrow-up-right.png") right center no-repeat;
 }
 body .read-more .create-btn-expand.less ::before {
   content: "Ler menos";
@@ -203,6 +215,20 @@ body .read-more .card-body :first-child {
   margin-top: 1 0.625rem;
 }
 body .read-more .card-body :last-child {
+  margin-bottom: 0;
+}
+body .list-type-check {
+  list-style: none;
+  padding: 0;
+}
+body .list-type-check li {
+  background: url("../img/Icon-check.png") 0 7px no-repeat;
+  padding-left: 1.563rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.313rem;
+}
+body .list-type-check li:last-child {
   margin-bottom: 0;
 }
 body .sec-01 {
@@ -328,7 +354,7 @@ body .sec-01 .stage .scroll .card .card-body p {
   display: block;
   display: -webkit-box;
   max-width: 100%;
-  height: 100px;
+  height: calc(3.125rem * 2);
   margin: 0 auto;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -336,9 +362,9 @@ body .sec-01 .stage .scroll .card .card-body p {
   text-overflow: ellipsis;
 }
 body .sec-01 .stage .scroll .card .card-body a {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
-body .sec-02 .card-body h1 {
+body .sec-02 h1 {
   font-family: "futuraPTCondExtraBold", sans-serif;
   font-size: 1.625rem;
   line-height: 1.875rem;
@@ -351,6 +377,49 @@ body .sec-02 .card-body h2 {
 body .sec-02 .card-body p {
   color: #444444;
 }
+body .sec-03 h1 {
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+}
+body .sec-03 figure {
+  border-radius: 0.438rem;
+  height: calc(3.125rem * 4 + 0.938rem);
+  overflow: hidden;
+}
+body .sec-03 figure img {
+  margin-top: -1.25rem;
+}
+body .sec-04 h1 {
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+}
+body .sec-04 p {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #333333;
+}
+body .sec-04 .img-cell {
+  height: calc(3.125rem * 6 + 1.875rem);
+  display: block;
+  margin-left: auto;
+  margin-right: -1.25rem;
+}
+body .sec-05 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #E2E2E2), color-stop(50%, #FFFFFF));
+  background: linear-gradient(180deg, #E2E2E2 50%, #FFFFFF 50%);
+}
+body .sec-05 h1 {
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+}
+body .sec-05 h3 {
+  font-size: 1rem;
+  font-family: "poppinsBold", sans-serif;
+}
+
 /* Footer
 --------------------------------------------------- */
 /* Responsive
@@ -406,7 +475,7 @@ body .sec-02 .card-body p {
     font-size: 1rem;
     color: #333333;
     border: none;
-    border-bottom: solid 2px #CCCCCC;
+    border-bottom: solid 0.125rem #CCCCCC;
     border-radius: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -414,7 +483,7 @@ body .sec-02 .card-body p {
   body .sec-01 input:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
-    border-bottom: solid 2px #CCCCCC;
+    border-bottom: solid 0.125rem #CCCCCC;
   }
   body .sec-01 input::-webkit-input-placeholder {
     font-family: "poppinsLight", sans-serif;
@@ -479,7 +548,7 @@ body .sec-02 .card-body p {
     font-size: 1.125rem;
     line-height: 1.688rem;
     text-align: left;
-    height: 130px;
+    height: calc(3.125rem * 2 + 1.875rem);
   }
   body .sec-03 {
     background-color: #E2E2E2;

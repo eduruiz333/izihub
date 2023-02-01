@@ -82,7 +82,7 @@ jQuery("#carousel_03").owlCarousel({
 
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')
-const btn = `<button class="btn btn-primary"></button>`
+const btn = `<button class="btn-read-more"></button>`
 
 
 for (let i = 0; i < getContentHeight.length; i++) {
