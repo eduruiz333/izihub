@@ -2,13 +2,15 @@
 @media (min-width: 320px) {}
 
 // s — Small Screens
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    
+}
 
 // m — Medium Screens
 @media (min-width: 960px) {
     body {
         .header {
-            border-bottom: solid 3px $green-046673;
+            border-bottom: solid 4px $green-046673;
 
             .logo-izihub {
                 width: auto;
@@ -19,8 +21,141 @@
             }
         }
 
-    }
+        .owl-theme {
+            .owl-nav {
+                button {
+                    &.owl-next {
+                        margin-right: 240px;
+                    }
+                }
+            }
+        }
 
+        .sec-01 {
+
+            h1 {
+                font-size: calc(#{$px-50 + $px-15});
+                background-position: 268px center;
+                background-size: auto;
+            }
+
+            p {
+                font-size: $px-28;
+                line-height: calc(#{$px-30 + $px-6});
+
+                &.card-text {
+                    line-height: $px-22;
+                }
+            }
+
+            .card {
+
+                &.lead {
+                    width: calc(#{$px-50} * 6 + #{$px-12});
+                    font-family: $poppinsMedium;
+                    font-size: $px-18;
+                    line-height: $px-22;
+                    
+                    .card-text {
+                        font-size: $px-20;
+                        line-height: $px-28;
+                    }
+                }
+            }
+
+            .btn {
+                font-size: $px-16;
+                height: calc(#{$px-40 + $px-8});
+
+                &.arrow-right-white {
+                    &:hover {
+                        background-color: $blue-004165;
+                    }
+                    .comp-text {
+                        display: inline-block;
+                        margin-left: $px-3;
+                    }
+                }
+            }
+
+            input {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+
+                border: none;
+                border-bottom: solid $px-2 $grey-CCCCCC;
+                border-radius: 0;
+                box-shadow: none;
+
+                &:focus {
+                    box-shadow: none;
+                    border-bottom: solid $px-2 $grey-CCCCCC;
+                }
+
+
+                &::placeholder {
+                    font-family: $poppinsLight;
+                    font-size: $px-16;
+                    color: $black-333333;
+                }
+
+                &:-ms-input-placeholder {
+                    font-family: $poppinsLight;
+                    font-size: $px-16;
+                    color: $black-333333;
+                }
+
+                &::-ms-input-placeholder {
+                    font-family: $poppinsLight;
+                    font-size: $px-16;
+                    color: $black-333333;
+                }
+            }
+
+            .stage {
+                position: relative;
+                height: calc(#{$px-50} * 8.5);
+                overflow: hidden;
+    
+                .scroll {
+                    position: absolute;
+                    left: 640px;
+                    width: 920px;
+                    padding: $px-30 $px-30 $px-20;
+    
+                    .card {
+                        width: calc(#{$px-50} * 5 + #{$px-25});
+                        margin-bottom: $px-10;
+    
+                        .card-body {
+                            padding: $px-15 $px-15 $px-20;
+    
+                            figure {
+                                margin-bottom: $px-30;
+    
+                                img {
+                                    margin: 0;
+                                }
+                            }
+    
+                            p {
+                                font-size: $px-18;
+                                line-height: $px-27;
+                                text-align: left;
+                                height: calc(#{$px-50} * 2 + #{$px-30});
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .sec-03 {
+            background-color: $grey-E2E2E2;
+        }
+    }
 }
 
 // l — Large Screens

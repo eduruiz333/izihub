@@ -1,5 +1,37 @@
 body {
     overflow-x: hidden;
+    background-color: $white-FFFFFF;
+
+    .card {
+        border-radius: $px-7;
+        background-color: $white-FFFFFF;
+        filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+        margin-bottom: $px-3;
+    }
+
+    .btn {
+        width: 100%;
+        height: $px-40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        border: none;
+        background-color: $green-037887;
+        font-family: $poppinsMedium;
+
+        &:hover {
+            background-color: $blue-004165;
+        }
+
+        &:active,
+        &:focus,
+        &:active:focus {
+            background-color: $blue-004165;
+            border: none;
+            box-shadow: none;
+        }
+    }
 
     .header {
         background-color: $blue-004165;
@@ -29,14 +61,139 @@ body {
         }
     }
 
-    .lead {
+    .owl-theme {
+        .owl-nav {
+            [class*=owl-]:hover {
+                background: transparent;
+                color: #FFF;
+                text-decoration: none
+            }
+
+            margin: 0 0 $px-5 0;
+
+            button {
+                
+                span {
+                    display: block;
+                    font-size: 0;
+                    width: $px-16;
+                    height: $px-17;
+                    background-size: $px-14 $px-17 !important;
+                }
+    
+                &.owl-prev {
+                    span {
+                        background: transparent url('../img/Icon-arrow-left.png') center center no-repeat !important;
+                        margin-right: $px-20;
+                    }
+                }
+    
+                &.owl-next {
+                    span {
+                        background: transparent url('../img/Icon-arrow-right.png') center center no-repeat !important;
+                        margin-left: $px-20;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .read-more {
+        .crop {
+            height: calc(#{$px-50} * 3 + #{$px-15});
+            overflow: hidden;
+            position: relative;
+            
+            &::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                content: '...';
+                font-family: $poppinsMedium;
+                font-size: $px-16;
+                color: $grey-444444;
+                padding-right: $px-15;
+                text-align: right;
+                background-image: linear-gradient(to bottom, transparent, $white-FFFFFF);
+            }
+
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .create-btn-expand {
+            height: $px-40;
+            margin: $px-15 $px-5;
+
+            .btn-read-more {
+                font-size: $px-16;
+                line-height: $px-20;
+                color: $blue-005CB1;
+                font-family: $poppinsMedium;
+                border: none;
+                padding-right: $px-20;
+                background: transparent url('../img/Icon-arrow-down.png') right center no-repeat;
+            }
+    
+            ::before {
+                content: 'Ler mais';
+            }
+            
+             &.less {
+                .btn-read-more {
+                    background: transparent url('../img/Icon-arrow-up-right.png') right center no-repeat;
+                }
+                ::before {
+                    content: 'Ler menos';
+                }
+             }
+        }
+
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 0;
+            min-height: calc(#{$px-50} * 3 + #{$px-15});
+
+            :first-child {
+                margin-top: 1$px-10;
+            }
+
+            :last-child {
+                margin-bottom: 0;
+
+            }
+        }
+    }
+
+    .list-type-check {
+        list-style: none;
+        padding: 0;
+
+        li {
+            background: url('../img/Icon-check.png') 0 7px no-repeat;
+            padding-left: $px-25;
+            font-size: $px-16;
+            line-height: $px-24;
+            margin-bottom: $px-5;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .sec-01 {
         background-color: $grey-E2E2E2;
 
         h1 {
             font-family: $futuraPTCondExtraBold;
             font-size: $px-30;
             background: url('../img/logo-izihub.png') 125px center no-repeat;
-            background-size: 17%;
+            background-size: 73px auto;
         }
 
         p {
@@ -48,5 +205,207 @@ body {
                 line-height: $px-22;
             }
         }
+
+        .card {
+            &.lead {
+                width: calc(#{$px-50} * 6 - #{$px-10});
+                font-family: $poppinsMedium;
+                font-size: $px-18;
+                line-height: $px-22;
+            }
+        }
+
+        .btn {
+            font-size: $px-16;
+
+            &.arrow-right {
+                background: url('../img/Icon-arrow-right.png') 80% center no-repeat;
+                padding-right: $px-25;
+            }
+
+            &.disabled {
+                background-color: $grey-E7E7E7;
+                color: $black-333333;
+                opacity: .4;
+            }
+            
+            &.arrow-right-white {
+                background: $green-037887 url('../img/Icon-arrow-white-right.png') 80% center no-repeat;
+                padding-right: $px-25;
+
+                .comp-text {
+                    display: none;
+                }
+            }
+        }
+
+        input {
+            font-family: $poppinsLight;
+            font-size: $px-16;
+            color: $black-333333;
+
+            border: none;
+            border-bottom: solid 2px $grey-CCCCCC;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: none;
+                border-bottom: solid 2px $grey-CCCCCC;
+            }
+
+
+            &::placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+
+            &:-ms-input-placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+
+            &::-ms-input-placeholder {
+                font-family: $poppinsLight;
+                font-size: $px-16;
+                color: $black-333333;
+            }
+        }
+
+        .stage {
+            .scroll {
+                padding: $px-10;
+                border-radius: $px-7;
+                background-color: $white-FFFFFF;
+                filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+
+                .card {
+                    width: calc(#{$px-50} * 4 - #{$px-15});
+                    margin-bottom: $px-10;
+
+                    .card-body {
+                        padding: $px-15 $px-5;
+
+                        figure {
+                            margin-bottom: $px-10;
+
+                            img {
+                                height: $px-27;
+                                width: auto;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        p {
+                            font-size: $px-16;
+                            line-height: $px-20;
+                            color: $grey-444444;
+                            text-align: center;
+
+                            display: block;
+                            display: -webkit-box;
+                            max-width: 100%;
+                            height: calc(#{$px-50} * 2);
+                            margin: 0 auto;
+                            -webkit-line-clamp: 5;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        a {
+                            margin-top: $px-20;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-02 {
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-26;
+            line-height: $px-30;
+        }
+
+        .card-body {
+            h2 {
+                font-family: $poppinsBold;
+                font-size: $px-18;
+                line-height: $px-25;
+            }
+    
+            p {
+                color: $grey-444444;
+            }
+    
+        }
+
+    }
+
+    .sec-03 {
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-26;
+            line-height: $px-30;
+        }
+
+        figure {
+            border-radius: $px-7;
+            height: calc(#{$px-50} * 4 + #{$px-15});
+            overflow: hidden;
+
+            img {
+                margin-top: -$px-20;
+            }
+        }
+
+
+    }
+
+    .sec-04 {
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-26;
+            line-height: $px-30;
+        }
+
+        p {
+            font-size: $px-16;
+            line-height: $px-22;
+            color: $black-333333;
+        }
+
+        .img-cell {
+            height: calc(#{$px-50} * 6 + #{$px-30});
+            display: block;
+            margin-left: auto;
+            margin-right: -$px-20;
+        }
+    }
+
+    .sec-05 {
+
+        background: -webkit-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
+        background: -o-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
+        background: -moz-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
+        background: linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
+
+        h1 {
+            font-family: $futuraPTCondExtraBold;
+            font-size: $px-26;
+            line-height: $px-30;
+        }
+
+        h3 {
+            font-size: $px-16;
+            font-family: $poppinsBold;
+        }
+        
     }
 }
+

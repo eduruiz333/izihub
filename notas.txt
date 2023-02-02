@@ -10,3 +10,22 @@ On Windows Shift + Alt + F.
 On Mac Shift + Option + F.
 On Linux Ctrl + Shift + I.
 Selecionar todas as ocorrências em um arquivo: Ctrl + Shift + J
+
+
+LEIA MAIS
+https://codepen.io/Nuke66/pen/LgzRLW
+
+http://127.0.0.1:5500/leia-mais.html#
+
+https://codepen.io/briankilledit/pen/jPqOVe
+
+https://codepen.io/dennisgarcia/pen/WvrReK
+
+https://codepen.io/StephenScaff/pen/oPbbMx
+https://codepen.io/mahtab-alam/pen/aPKLBq
+https://codepen.io/welcomebrand/pen/NZrowy
+https://www.w3schools.com/howto/howto_js_read_more.asp
+https://codepen.io/royketelaar/pen/avWxve
+https://codepen.io/_kashmira/pen/YpVjrM
+https://codepen.io/yassinedoghri/pen/QWpwoxp
+https://codepen.io/jrog/pen/OjeLQZ
