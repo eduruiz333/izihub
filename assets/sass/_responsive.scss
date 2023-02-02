@@ -2,9 +2,7 @@
 @media (min-width: 320px) {}
 
 // s — Small Screens
-@media (min-width: 640px) {
-    
-}
+@media (min-width: 640px) {}
 
 // m — Medium Screens
 @media (min-width: 960px) {
@@ -21,17 +19,16 @@
             }
         }
 
-        .owl-theme {
-            .owl-nav {
-                button {
-                    &.owl-next {
-                        margin-right: 240px;
+        .sec-01 {
+            .owl-theme {
+                .owl-nav {
+                    button {
+                        &.owl-next {
+                            margin-right: 240px;
+                        }
                     }
                 }
             }
-        }
-
-        .sec-01 {
 
             h1 {
                 font-size: calc(#{$px-50 + $px-15});
@@ -55,7 +52,7 @@
                     font-family: $poppinsMedium;
                     font-size: $px-18;
                     line-height: $px-22;
-                    
+
                     .card-text {
                         font-size: $px-20;
                         line-height: $px-28;
@@ -71,6 +68,7 @@
                     &:hover {
                         background-color: $blue-004165;
                     }
+
                     .comp-text {
                         display: inline-block;
                         margin-left: $px-3;
@@ -117,28 +115,28 @@
                 position: relative;
                 height: calc(#{$px-50} * 8.5);
                 overflow: hidden;
-    
+
                 .scroll {
                     position: absolute;
                     left: 640px;
                     width: 920px;
                     padding: $px-30 $px-30 $px-20;
-    
+
                     .card {
                         width: calc(#{$px-50} * 5 + #{$px-25});
                         margin-bottom: $px-10;
-    
+
                         .card-body {
                             padding: $px-15 $px-15 $px-20;
-    
+
                             figure {
                                 margin-bottom: $px-30;
-    
+
                                 img {
                                     margin: 0;
                                 }
                             }
-    
+
                             p {
                                 font-size: $px-18;
                                 line-height: $px-27;
@@ -152,8 +150,107 @@
 
         }
 
+        .sec-02 {
+            h1 {
+                font-family: $futuraPTCondExtraBold;
+                font-size: $px-40;
+                line-height: $px-4;
+                height: calc(#{$px-40 + $px-5});
+                margin-top: $px-30;
+            }
+
+            h2 {
+                font-family: $poppinsBold;
+                font-size: $px-20;
+                line-height: $px-25;
+            }
+
+            p {
+                font-size: $px-18;
+                line-height: $px-25;
+            }
+        }
+
         .sec-03 {
             background-color: $grey-E2E2E2;
+
+            figure {
+                border-radius: 0;
+                height: calc(#{$px-50} * 12);
+                overflow: hidden;
+                margin-bottom: 0;
+
+                img {
+                    margin-top: 0;
+                    height: calc(#{$px-50} * 12);
+                    object-fit: cover;
+                }
+            }
+
+            h1 {
+                font-family: $futuraPTCondExtraBold;
+                font-size: $px-40;
+                line-height: calc(#{$px-40 + $px-5});
+                ;
+            }
+
+            p,
+            li {
+                font-family: $poppinsSemiBold;
+                font-size: $px-20;
+                line-height: $px-30;
+            }
+        }
+
+        .sec-04 {
+            h1 {
+                font-family: $futuraPTCondExtraBold;
+                font-size: $px-40;
+                line-height: calc(#{$px-40 + $px-5});
+            }
+
+            p {
+                font-family: $poppinsSemiBold;
+                font-size: $px-20;
+                line-height: $px-30;
+            }
+
+            .img-cell {
+                height: calc(#{$px-50} * 11 + #{$px-10});
+                display: block;
+                margin: 50px auto -50px;
+            }
+
+            .mr-3 {
+                margin-right: 30px;
+            }
+        }
+
+        .sec-05 {
+            h1 {
+                font-family: $futuraPTCondExtraBold;
+                font-size: $px-40;
+                line-height: calc(#{$px-40 + $px-5});
+                text-align: center;
+                margin-top: $px-40;
+            }
+
+            p {
+                font-size: $px-20;
+                text-align: center;
+            }
+
+            .card {
+                h3 {
+                    font-size: $px-18;
+                }
+
+                p {
+                    font-size: $px-18;
+                    line-height: $px-25;
+                    text-align: left;
+                }
+            }
         }
     }
 }

@@ -5,6 +5,11 @@
 @font-face {
   font-family: poppinsLight;
   src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
   font-weight: 500;
 }
 @font-face {
@@ -30,6 +35,11 @@
 @font-face {
   font-family: futuraPTMedium;
   src: url("../fonts/FuturaPT/FuturaPTMedium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: futuraPTBold;
+  src: url("../fonts/FuturaPT/FuturaPTBold.otf");
   font-weight: 500;
 }
 @font-face {
@@ -82,6 +92,12 @@ body {
 body {
   overflow-x: hidden;
   background-color: #FFFFFF;
+}
+body .poppins-bold {
+  font-family: "poppinsBold", sans-serif;
+}
+body .poppins-semi-bold {
+  font-family: "poppinsSemiBold", sans-serif;
 }
 body .card {
   border-radius: 0.438rem;
@@ -274,7 +290,7 @@ body .sec-01 .btn.arrow-right-white .comp-text {
   display: none;
 }
 body .sec-01 input {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
   border: none;
@@ -289,37 +305,37 @@ body .sec-01 input:focus {
   border-bottom: solid 2px #CCCCCC;
 }
 body .sec-01 input::-webkit-input-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input::-moz-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input:-ms-input-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input::-ms-input-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input::placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input:-ms-input-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 body .sec-01 input::-ms-input-placeholder {
-  font-family: "poppinsLight", sans-serif;
+  font-family: "poppinsRegular", sans-serif;
   font-size: 1rem;
   color: #333333;
 }
@@ -378,7 +394,7 @@ body .sec-02 .card-body p {
   color: #444444;
 }
 body .sec-03 h1 {
-  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-family: "futuraPTBold", sans-serif;
   font-size: 1.625rem;
   line-height: 1.875rem;
 }
@@ -391,7 +407,7 @@ body .sec-03 figure img {
   margin-top: -1.25rem;
 }
 body .sec-04 h1 {
-  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-family: "futuraPTBold", sans-serif;
   font-size: 1.625rem;
   line-height: 1.875rem;
 }
@@ -407,11 +423,11 @@ body .sec-04 .img-cell {
   margin-right: -1.25rem;
 }
 body .sec-05 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #E2E2E2), color-stop(50%, #FFFFFF));
-  background: linear-gradient(180deg, #E2E2E2 50%, #FFFFFF 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F1F1F1), color-stop(50%, #FFFFFF));
+  background: linear-gradient(180deg, #F1F1F1 50%, #FFFFFF 50%);
 }
 body .sec-05 h1 {
-  font-family: "futuraPTCondExtraBold", sans-serif;
+  font-family: "futuraPTBold", sans-serif;
   font-size: 1.625rem;
   line-height: 1.875rem;
 }
@@ -434,7 +450,7 @@ body .sec-05 h3 {
   body .header .logo-certisign {
     width: auto;
   }
-  body .owl-theme .owl-nav button.owl-next {
+  body .sec-01 .owl-theme .owl-nav button.owl-next {
     margin-right: 240px;
   }
   body .sec-01 h1 {
@@ -550,7 +566,83 @@ body .sec-05 h3 {
     text-align: left;
     height: calc(3.125rem * 2 + 1.875rem);
   }
+  body .sec-02 h1 {
+    font-family: "futuraPTCondExtraBold", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.25rem;
+    height: calc(2.813rem);
+    margin-top: 1.875rem;
+  }
+  body .sec-02 h2 {
+    font-family: "poppinsBold", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+  }
+  body .sec-02 p {
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
   body .sec-03 {
     background-color: #E2E2E2;
+  }
+  body .sec-03 figure {
+    border-radius: 0;
+    height: calc(3.125rem * 12);
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  body .sec-03 figure img {
+    margin-top: 0;
+    height: calc(3.125rem * 12);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .sec-03 h1 {
+    font-family: "futuraPTCondExtraBold", sans-serif;
+    font-size: 2.5rem;
+    line-height: calc(2.813rem);
+  }
+  body .sec-03 p,
+body .sec-03 li {
+    font-family: "poppinsSemiBold", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  body .sec-04 h1 {
+    font-family: "futuraPTCondExtraBold", sans-serif;
+    font-size: 2.5rem;
+    line-height: calc(2.813rem);
+  }
+  body .sec-04 p {
+    font-family: "poppinsSemiBold", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  body .sec-04 .img-cell {
+    height: calc(3.125rem * 11 + 0.625rem);
+    display: block;
+    margin: 50px auto -50px;
+  }
+  body .sec-04 .mr-3 {
+    margin-right: 30px;
+  }
+  body .sec-05 h1 {
+    font-family: "futuraPTCondExtraBold", sans-serif;
+    font-size: 2.5rem;
+    line-height: calc(2.813rem);
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  body .sec-05 p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  body .sec-05 .card h3 {
+    font-size: 1.125rem;
+  }
+  body .sec-05 .card p {
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: left;
   }
 }

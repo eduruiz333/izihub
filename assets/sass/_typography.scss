@@ -1,9 +1,14 @@
 @font-face {
     font-family: poppinsLight;
     src: url('../fonts/Poppins/Poppins-Light.ttf');
-    font-weight: 500;
+    font-weight: 400;
 }
 
+@font-face {
+    font-family: poppinsRegular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 500;
+}
 
 @font-face {
     font-family: poppinsMedium;
@@ -36,6 +41,12 @@
 }
 
 @font-face {
+    font-family: futuraPTBold;
+    src: url('../fonts/FuturaPT/FuturaPTBold.otf');
+    font-weight: 500;
+}
+
+@font-face {
     font-family: futuraPTCondMedium;
     src: url('../fonts/FuturaPT/FuturaPTCondMedium.otf');
     font-weight: 500;
@@ -48,11 +59,14 @@
 }
 
 $poppinsLight: 'poppinsLight', sans-serif;
+$poppinsRegular: 'poppinsRegular', sans-serif;
 $poppinsMedium: 'PoppinsMedium', sans-serif;
 $poppinsBold: 'poppinsBold', sans-serif;
 $poppinsSemiBold: 'poppinsSemiBold', sans-serif;
 $poppinsItalic: 'poppinsItalic', sans-serif;
+
 $futuraPTMedium: 'futuraPTMedium', sans-serif;
+$futuraPTBold: 'futuraPTBold', sans-serif;
 $futuraPTCondMedium: 'futuraPTCondMedium', sans-serif;
 $futuraPTCondExtraBold: 'futuraPTCondExtraBold', sans-serif;
 

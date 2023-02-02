@@ -2,6 +2,13 @@ body {
     overflow-x: hidden;
     background-color: $white-FFFFFF;
 
+    .poppins-bold {
+        font-family: $poppinsBold;
+    }
+    .poppins-semi-bold {
+        font-family: $poppinsSemiBold;
+    }
+
     .card {
         border-radius: $px-7;
         background-color: $white-FFFFFF;
@@ -240,7 +247,7 @@ body {
         }
 
         input {
-            font-family: $poppinsLight;
+            font-family: $poppinsRegular;
             font-size: $px-16;
             color: $black-333333;
 
@@ -256,19 +263,19 @@ body {
 
 
             &::placeholder {
-                font-family: $poppinsLight;
+                font-family: $poppinsRegular;
                 font-size: $px-16;
                 color: $black-333333;
             }
 
             &:-ms-input-placeholder {
-                font-family: $poppinsLight;
+                font-family: $poppinsRegular;
                 font-size: $px-16;
                 color: $black-333333;
             }
 
             &::-ms-input-placeholder {
-                font-family: $poppinsLight;
+                font-family: $poppinsRegular;
                 font-size: $px-16;
                 color: $black-333333;
             }
@@ -349,7 +356,7 @@ body {
 
     .sec-03 {
         h1 {
-            font-family: $futuraPTCondExtraBold;
+            font-family: $futuraPTBold;
             font-size: $px-26;
             line-height: $px-30;
         }
@@ -369,7 +376,7 @@ body {
 
     .sec-04 {
         h1 {
-            font-family: $futuraPTCondExtraBold;
+            font-family: $futuraPTBold;
             font-size: $px-26;
             line-height: $px-30;
         }
@@ -390,13 +397,13 @@ body {
 
     .sec-05 {
 
-        background: -webkit-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
-        background: -o-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
-        background: -moz-linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
-        background: linear-gradient(180deg, $grey-E2E2E2 50%, $white-FFFFFF 50%);
+        background: -webkit-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
+        background: -o-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
+        background: -moz-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
+        background: linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
 
         h1 {
-            font-family: $futuraPTCondExtraBold;
+            font-family: $futuraPTBold;
             font-size: $px-26;
             line-height: $px-30;
         }
