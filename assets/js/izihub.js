@@ -73,6 +73,12 @@ jQuery("#carousel_03").owlCarousel({
     }
 })
 
+$(document).ready(function () {
+    $(".btn-inicio").click(function() {
+        $("html, body").animate({scrollTop: 0}, 800)
+    })          
+})
+
 
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')

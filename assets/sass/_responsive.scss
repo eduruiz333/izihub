@@ -16,6 +16,22 @@
             }
         }
 
+        .btn-voltar {
+            background-color: $blue-004066;
+            color: $white-FFFFFF;
+            height: $px-50;
+            border-top: $px-5 solid $green-037887;
+
+            &:hover {
+                background-color: $green-037887;
+            }
+
+            .btn-inicio {
+                cursor: pointer;
+                padding-top: $px-10;
+            }
+        }
+
         .sec-01 {
 
             h1 {
@@ -247,22 +263,138 @@
                 }
             }
         }
+
+        .sec-07 {
+            .footer {
+                .box-footer-1 {
+                    padding-top: $px-50;
+                    border-bottom: $px-1 solid $white-FFFFFF;
+                    padding-bottom: $px-20;
+
+                    .medias {
+                        margin-left: 60px;
+
+                        span {
+                            font-size: $px-20;
+                            font-family: $poppinsMedium;
+                            margin-bottom: $px-5;
+                        }
+                    }
+                }
+
+                .box-footer-2 {
+                    border-bottom: $px-1 solid $white-FFFFFF;
+                    padding-bottom: $px-20;
+                    margin-bottom: $px-40;
+
+                    h2 {
+                        padding-top: $px-40;
+                        font-size: $px-20;
+                        font-family: $poppinsSemiBold;
+                    }
+
+                    h3 {
+                        font-size: $px-14;
+                        padding: $px-10 0;
+                    }
+
+                    dl {
+                        dt {
+                            font-size: $px-14;
+                            font-family: $poppinsMedium;
+
+                        }
+
+                        dd {
+                            font-size: $px-18;
+                            font-family: $poppinsSemiBold;
+                        }
+                    }
+
+                    .disclaimer {
+                        font-size: $px-12;
+                        font-family: $poppinsMedium; // mudar para regular
+                    }
+
+                    .autoatendimento {
+                        a {
+                            display: block;
+                            margin-bottom: $px-20;
+                            color: $white-FFFFFF;
+                            text-decoration: none;
+                            font-size: $px-14;
+                        }
+
+                    }
+
+                }
+
+                .box-footer-3 {
+                    p {
+                        text-align: center;
+                        font-size: $px-12;
+                        font-family: $poppinsMedium;
+                    }
+                }
+
+            }
+        }
     }
 }
 
 // m — Medium Screens
-@media (min-width: 960px) {}
+@media (min-width: 960px) {
+    footer {
+        .sec-07 {
+            .footer {
+                .box-footer-1 {
+                    p {
+                        font-size: $px-20;
+                        text-align: center;
+                        font-family: $poppinsMedium;
+                    }
+
+                    .medias {
+                        span {
+                            padding-left: 12rem;
+                        }
+
+                        .social-medias {
+                            margin: 0 !important;
+                            justify-content: end;
+                            padding-right: 0;
+
+                            li {
+                                padding-right: 0 !important;
+                                padding-left: $px-26;
+                            }
+                        }
+                    }
+                }
+
+                .box-footer-2 {
+
+                    h3 {
+                        font-size: $px-18;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
 
 // l — Large Screens
 @media (min-width: 1200px) {
     body {
         .sec-01 {
             .stage {
-    
+
                 .scroll {
                     left: 20%;
                     width: 1230px;
-    
+
                     .owl-theme {
                         .owl-nav {
                             button {
@@ -274,9 +406,8 @@
                     }
                 }
             }
-    
-        }
 
+        }
     }
 }
 
@@ -285,10 +416,10 @@
     body {
         .sec-01 {
             .stage {
-    
+
                 .scroll {
                     width: 1375px;
-    
+
                     .owl-theme {
                         .owl-nav {
                             button {
@@ -300,8 +431,7 @@
                     }
                 }
             }
-    
-        }
 
+        }
     }
 }
