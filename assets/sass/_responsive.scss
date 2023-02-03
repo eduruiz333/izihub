@@ -2,10 +2,7 @@
 @media (min-width: 320px) {}
 
 // s — Small Screens
-@media (min-width: 640px) {}
-
-// m — Medium Screens
-@media (min-width: 960px) {
+@media (min-width: 640px) {
     body {
         .header {
             border-bottom: solid 4px $green-046673;
@@ -20,15 +17,6 @@
         }
 
         .sec-01 {
-            .owl-theme {
-                .owl-nav {
-                    button {
-                        &.owl-next {
-                            margin-right: 240px;
-                        }
-                    }
-                }
-            }
 
             h1 {
                 font-size: calc(#{$px-50 + $px-15});
@@ -112,14 +100,11 @@
             }
 
             .stage {
-                position: relative;
-                height: calc(#{$px-50} * 8.5);
-                overflow: hidden;
+                height: 370px;
 
                 .scroll {
-                    position: absolute;
-                    left: 640px;
-                    width: 920px;
+                    left: 10%;
+                    width: 1160px;
                     padding: $px-30 $px-30 $px-20;
 
                     .card {
@@ -141,7 +126,17 @@
                                 font-size: $px-18;
                                 line-height: $px-27;
                                 text-align: left;
-                                height: calc(#{$px-50} * 2 + #{$px-30});
+                                height: calc(#{$px-50} * 3 + #{$px-20});
+                            }
+                        }
+                    }
+
+                    .owl-theme {
+                        .owl-nav {
+                            button {
+                                &.owl-next {
+                                    margin-right: 240px;
+                                }
                             }
                         }
                     }
@@ -255,8 +250,58 @@
     }
 }
 
+// m — Medium Screens
+@media (min-width: 960px) {}
+
 // l — Large Screens
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    body {
+        .sec-01 {
+            .stage {
+    
+                .scroll {
+                    left: 20%;
+                    width: 1230px;
+    
+                    .owl-theme {
+                        .owl-nav {
+                            button {
+                                &.owl-next {
+                                    margin-right: 140px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+
+    }
+}
 
 // xl — Extra Large Screens
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+    body {
+        .sec-01 {
+            .stage {
+    
+                .scroll {
+                    width: 1375px;
+    
+                    .owl-theme {
+                        .owl-nav {
+                            button {
+                                &.owl-next {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+
+    }
+}

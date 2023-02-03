@@ -30,8 +30,10 @@ https://codepen.io/jrog/pen/OjeLQZ
 
 TAREFAS
 
-Ajustes de texto e imagens e deslocamento dos slider que a Stella enviou
+Ajustar altura das imagens dos títulos dos cards - OK
+Ajustar geral do slider deslocado - OK
+Colocar os ícones nos títulos do segundo slider
 Fazer animação da seta dos botões
-Ajustar altura das imagens dos títulos dos cards
 Finalizar o último slider (tamanhos etc)
+Ajustes de texto e imagens que a Stella enviou
 

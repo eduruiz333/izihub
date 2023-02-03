@@ -5,6 +5,7 @@ body {
     .poppins-bold {
         font-family: $poppinsBold;
     }
+
     .poppins-semi-bold {
         font-family: $poppinsSemiBold;
     }
@@ -79,22 +80,22 @@ body {
             margin: 0 0 $px-5 0;
 
             button {
-                
+
                 span {
                     display: block;
                     font-size: 0;
                     width: $px-16;
                     height: $px-17;
-                    background-size: $px-14 $px-17 !important;
+                    background-size: $px-14 $px-17  !important;
                 }
-    
+
                 &.owl-prev {
                     span {
                         background: transparent url('../img/Icon-arrow-left.png') center center no-repeat !important;
                         margin-right: $px-20;
                     }
                 }
-    
+
                 &.owl-next {
                     span {
                         background: transparent url('../img/Icon-arrow-right.png') center center no-repeat !important;
@@ -103,15 +104,15 @@ body {
                 }
             }
         }
-        
+
     }
 
     .read-more {
         .crop {
-            height: calc(#{$px-50} * 3 + #{$px-15});
+            height: 165px;
             overflow: hidden;
             position: relative;
-            
+
             &::after {
                 display: block;
                 position: absolute;
@@ -134,7 +135,7 @@ body {
 
         .create-btn-expand {
             height: $px-40;
-            margin: $px-15 $px-5;
+            margin: $px-15 $px-5 0;
 
             .btn-read-more {
                 font-size: $px-16;
@@ -145,25 +146,26 @@ body {
                 padding-right: $px-20;
                 background: transparent url('../img/Icon-arrow-down.png') right center no-repeat;
             }
-    
+
             ::before {
                 content: 'Ler mais';
             }
-            
-             &.less {
+
+            &.less {
                 .btn-read-more {
                     background: transparent url('../img/Icon-arrow-up.png') right center no-repeat;
                 }
+
                 ::before {
                     content: 'Ler menos';
                 }
-             }
+            }
         }
 
         .card-body {
             padding-top: 0;
             padding-bottom: 0;
-            min-height: calc(#{$px-50} * 3 + #{$px-15});
+            min-height: 165px;
 
             :first-child {
                 margin-top: 1$px-10;
@@ -196,10 +198,14 @@ body {
     .sec-01 {
         background-color: $grey-E2E2E2;
 
+        .pr-0 {
+            padding-right: 0;
+        }
+
         h1 {
             font-family: $futuraPTCondExtraBold;
             font-size: $px-30;
-            background: url('../img/logo-izihub.png') 125px center no-repeat;
+            background: url('../img/logo-izihub-verde.png') 125px center no-repeat;
             background-size: 73px auto;
         }
 
@@ -235,7 +241,7 @@ body {
                 color: $black-333333;
                 opacity: .4;
             }
-            
+
             &.arrow-right-white {
                 background: $green-037887 url('../img/Icon-arrow-white-right.png') 80% center no-repeat;
                 padding-right: $px-25;
@@ -281,22 +287,31 @@ body {
             }
         }
 
+
         .stage {
+            position: relative;
+            height: 330px;
+            overflow: visible;
+
             .scroll {
                 padding: $px-10;
                 border-radius: $px-7;
                 background-color: $white-FFFFFF;
                 filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
 
+                position: absolute;
+                left: 0;
+                width: 430px;
+
                 .card {
-                    width: calc(#{$px-50} * 4 - #{$px-15});
+                    width: calc(#{$px-50} * 4);
                     margin-bottom: $px-10;
 
                     .card-body {
                         padding: $px-15 $px-5;
 
                         figure {
-                            margin-bottom: $px-10;
+                            margin-bottom: $px-20;
 
                             img {
                                 height: $px-27;
@@ -308,24 +323,28 @@ body {
 
                         p {
                             font-size: $px-16;
-                            line-height: $px-20;
+                            line-height: $px-25;
                             color: $grey-444444;
                             text-align: center;
+                            padding: 0 $px-10;
 
                             display: block;
                             display: -webkit-box;
                             max-width: 100%;
-                            height: calc(#{$px-50} * 2);
+                            height: calc(#{$px-50} * 3 + #{$px-30});
                             margin: 0 auto;
-                            -webkit-line-clamp: 5;
+                            -webkit-line-clamp: 7;
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             text-overflow: ellipsis;
                         }
 
-                        a {
-                            margin-top: $px-20;
-                        }
+                    }
+                }
+
+                .owl-theme {
+                    .owl-nav {
+                        margin: -10px 10px 0;
                     }
                 }
             }
@@ -344,12 +363,39 @@ body {
                 font-family: $poppinsBold;
                 font-size: $px-18;
                 line-height: $px-25;
+                height: 35px;
+                padding: 5px 0 0 35px;
+                margin: 10px 0;
+                background-position: 0 center;
+                background-repeat: no-repeat;
+
+                &.ico-governo {
+                    background-image: url('../img/icon-gov.png');
+                }
+                &.ico-entidades {
+                    background-image: url('../img/icon-user.png');
+                }
+                &.ico-saude {
+                    background-image: url('../img/heart-icon.png');
+                }
+                &.ico-educacao {
+                    background-image: url('../img/icon-educ.png');
+                }
+                &.ico-onboard {
+                    background-image: url('../img/Icon-box-container.png');
+                }
+                &.ico-dolar {
+                    background-image: url('../img/dolar.png');
+                }
+                &.ico-acesso {
+                    background-image: url('../img/icon-acesso.png');
+                }
             }
-    
+
             p {
                 color: $grey-444444;
             }
-    
+
         }
 
     }
@@ -412,7 +458,6 @@ body {
             font-size: $px-16;
             font-family: $poppinsBold;
         }
-        
+
     }
 }
-
