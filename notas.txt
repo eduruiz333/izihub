@@ -12,15 +12,11 @@ On Linux Ctrl + Shift + I.
 Selecionar todas as ocorrências em um arquivo: Ctrl + Shift + J
 
 
-LEIA MAIS
+LEIA MAIS (não soluciona)
 https://codepen.io/Nuke66/pen/LgzRLW
-
 http://127.0.0.1:5500/leia-mais.html#
-
 https://codepen.io/briankilledit/pen/jPqOVe
-
 https://codepen.io/dennisgarcia/pen/WvrReK
-
 https://codepen.io/StephenScaff/pen/oPbbMx
 https://codepen.io/mahtab-alam/pen/aPKLBq
 https://codepen.io/welcomebrand/pen/NZrowy
@@ -29,3 +25,13 @@ https://codepen.io/royketelaar/pen/avWxve
 https://codepen.io/_kashmira/pen/YpVjrM
 https://codepen.io/yassinedoghri/pen/QWpwoxp
 https://codepen.io/jrog/pen/OjeLQZ
+
+
+
+TAREFAS
+
+Ajustes de texto e imagens e deslocamento dos slider que a Stella enviou
+Fazer animação da seta dos botões
+Ajustar altura das imagens dos títulos dos cards
+Finalizar o último slider (tamanhos etc)
+

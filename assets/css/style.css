@@ -217,7 +217,7 @@ body .read-more .create-btn-expand ::before {
   content: "Ler mais";
 }
 body .read-more .create-btn-expand.less .btn-read-more {
-  background: transparent url("../img/Icon-arrow-up-right.png") right center no-repeat;
+  background: transparent url("../img/Icon-arrow-up.png") right center no-repeat;
 }
 body .read-more .create-btn-expand.less ::before {
   content: "Ler menos";

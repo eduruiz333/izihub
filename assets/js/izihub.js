@@ -1,7 +1,7 @@
 jQuery("#carousel_01").owlCarousel({
     autoplay: false,
     lazyLoad: true,
-    loop: false,
+    loop: true,
     margin:10,
     responsiveClass: true,
     autoHeight: false,
@@ -83,7 +83,6 @@ jQuery("#carousel_03").owlCarousel({
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')
 const btn = `<button class="btn-read-more"></button>`
-
 
 for (let i = 0; i < getContentHeight.length; i++) {
     const alturas = getContentHeight[i].offsetHeight
