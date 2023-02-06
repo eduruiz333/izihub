@@ -86,7 +86,7 @@ body {
                     font-size: 0;
                     width: $px-16;
                     height: $px-17;
-                    background-size: $px-14 $px-17  !important;
+                    background-size: $px-14 $px-17 !important;
                 }
 
                 &.owl-prev {
@@ -372,21 +372,27 @@ body {
                 &.ico-governo {
                     background-image: url('../img/icon-gov.png');
                 }
+
                 &.ico-entidades {
                     background-image: url('../img/icon-user.png');
                 }
+
                 &.ico-saude {
                     background-image: url('../img/heart-icon.png');
                 }
+
                 &.ico-educacao {
                     background-image: url('../img/icon-educ.png');
                 }
+
                 &.ico-onboard {
                     background-image: url('../img/Icon-box-container.png');
                 }
+
                 &.ico-dolar {
                     background-image: url('../img/dolar.png');
                 }
+
                 &.ico-acesso {
                     background-image: url('../img/icon-acesso.png');
                 }
@@ -459,5 +465,102 @@ body {
             font-family: $poppinsBold;
         }
 
+    }
+
+    .sec-06 {
+        margin-top: $px-30;
+        font-family: $futuraPTCondExtraBold;
+        padding-left: $px-10;
+
+        h1 {
+            color: $black-333333;
+            font-size: $px-40;
+        }
+
+        .accordion-faq {
+            font-family: $poppinsMedium;
+
+            .card {
+                border: none;
+                border-bottom: solid $px-1 $grey-6E6F74 ;
+                margin-top: $px-20;
+                filter: none;
+
+                .card-header,
+                .card-body {
+                    padding: 0;
+                    border-bottom: none;
+                    background-color: $white-FFFFFF;
+                }
+
+                .card-body {
+                    padding-bottom: $px-15;
+
+                    .card-image {
+                        width: 100%;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .btn {
+                    text-decoration: none;
+                    font-size: $px-18 !important;
+                    color: $black-333333;
+                }
+
+                .btn,
+                p {
+                    font-size: $px-18 !important;
+                    line-height: $px-22;
+                    color: $black-333333;
+                    text-align: left;
+                    padding: 0;
+                }
+
+                .btn {
+                    white-space: normal;
+                    padding-right: $px-20;
+                    margin-bottom: $px-15;
+                    border-radius: 0;
+
+                    &::after {
+                        position: absolute;
+                        top: -$px-4;
+                        right: $px-5;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        content: '+';
+                        display: block;
+                        width: $px-15;
+                        height: $px-15;
+                        font-size: $px-24;
+                        color: $grey-6E6F74;
+                        transition: all .3s ease;
+                    }
+
+                    &:not(.collapsed)::after {
+                        transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        -webkit-transform: rotate(360deg);
+                        content: '-';
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+
+                }
+
+            }
+        }
     }
 }

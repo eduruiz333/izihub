@@ -473,6 +473,93 @@ body .sec-05 h3 {
   font-size: 1rem;
   font-family: "poppinsBold", sans-serif;
 }
+body .sec-06 {
+  margin-top: 1.875rem;
+  font-family: "futuraPTCondExtraBold", sans-serif;
+  padding-left: 0.625rem;
+}
+body .sec-06 h1 {
+  color: #333333;
+  font-size: 2.5rem;
+}
+body .sec-06 .accordion-faq {
+  font-family: "PoppinsMedium", sans-serif;
+}
+body .sec-06 .accordion-faq .card {
+  border: none;
+  border-bottom: solid 0.063rem #6E6F74;
+  margin-top: 1.25rem;
+  -webkit-filter: none;
+          filter: none;
+}
+body .sec-06 .accordion-faq .card .card-header,
+body .sec-06 .accordion-faq .card .card-body {
+  padding: 0;
+  border-bottom: none;
+  background-color: #FFFFFF;
+}
+body .sec-06 .accordion-faq .card .card-body {
+  padding-bottom: 0.938rem;
+}
+body .sec-06 .accordion-faq .card .card-body .card-image {
+  width: 100%;
+}
+body .sec-06 .accordion-faq .card .card-body a {
+  text-decoration: none;
+}
+body .sec-06 .accordion-faq .card .card-body a:hover {
+  text-decoration: underline;
+}
+body .sec-06 .accordion-faq .card .btn {
+  text-decoration: none;
+  font-size: 1.125rem !important;
+  color: #333333;
+}
+body .sec-06 .accordion-faq .card .btn,
+body .sec-06 .accordion-faq .card p {
+  font-size: 1.125rem !important;
+  line-height: 1.375rem;
+  color: #333333;
+  text-align: left;
+  padding: 0;
+}
+body .sec-06 .accordion-faq .card .btn {
+  white-space: normal;
+  padding-right: 1.25rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0;
+}
+body .sec-06 .accordion-faq .card .btn::after {
+  position: absolute;
+  top: -0.25rem;
+  right: 0.313rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "+";
+  display: block;
+  width: 0.938rem;
+  height: 0.938rem;
+  font-size: 1.5rem;
+  color: #6E6F74;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body .sec-06 .accordion-faq .card .btn:not(.collapsed)::after {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  content: "-";
+}
+body .sec-06 .accordion-faq .card .btn:hover {
+  text-decoration: none;
+}
 
 /* Footer
 --------------------------------------------------- */
