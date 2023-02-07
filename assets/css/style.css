@@ -471,24 +471,24 @@ body .sec-05 h1 {
 }
 body .sec-05 .stage {
   position: relative;
-  height: 430px;
+  height: calc(3.125rem * 8 + 1.875rem);
   overflow: visible;
 }
 body .sec-05 .stage .scroll {
   padding: 0;
   position: absolute;
   left: 0;
-  width: 510px;
+  width: calc(3.125rem * 10 + 0.625rem);
 }
 body .sec-05 .stage .scroll .card {
-  width: 248px;
+  width: calc(3.125rem * 5 - 0.125rem);
   margin-bottom: 0.625rem;
 }
 body .sec-05 .stage .scroll .card figure {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-top-left-radius: 0.438rem;
+  border-top-right-radius: 0.438rem;
   margin-bottom: 0;
-  height: 124px;
+  height: calc(3.125rem * 2 + 1.5rem);
   overflow: hidden;
 }
 body .sec-05 .stage .scroll .card figure img {
@@ -502,12 +502,12 @@ body .sec-05 .stage .scroll .card .card-body {
 body .sec-05 .stage .scroll .card .card-body h3 {
   font-size: 1rem;
   font-family: "poppinsBold", sans-serif;
-  margin-bottom: 10px;
-  height: 40px;
+  margin-bottom: 0.625rem;
+  height: 2.5rem;
   overflow: hidden;
 }
 body .sec-05 .stage .scroll .card .card-body p {
-  height: 96px;
+  height: calc(3.125rem * 2 - 0.25rem);
   overflow: hidden;
 }
 body .sec-05 .stage .scroll .link-read-more {
@@ -887,7 +887,7 @@ body .sec-03 li {
   }
   body .sec-05 .stage .scroll .card .card-body h3 {
     font-size: 1.125rem;
-    line-height: 25px;
+    line-height: 1.563rem;
     height: auto;
   }
   body .sec-05 .stage .scroll .card .card-body p {

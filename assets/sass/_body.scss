@@ -184,11 +184,11 @@ body {
             border: none;
             background-color: $green-037887;
             font-family: $poppinsMedium;
-    
+
             &:hover {
                 background-color: $blue-004165;
             }
-    
+
             &:active,
             &:focus,
             &:active:focus {
@@ -447,7 +447,6 @@ body {
     }
 
     .sec-05 {
-
         background: -webkit-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
         background: -o-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
         background: -moz-linear-gradient(180deg, $grey-F1F1F1 50%, $white-FFFFFF 50%);
@@ -459,11 +458,9 @@ body {
             line-height: $px-30;
         }
 
-        
-
         .stage {
             position: relative;
-            height: 430px;
+            height: calc(#{$px-50} * 8 + #{$px-30});
             overflow: visible;
 
             .scroll {
@@ -471,24 +468,23 @@ body {
 
                 position: absolute;
                 left: 0;
-                width: 510px;
+                width: calc(#{$px-50} * 10 + #{$px-10}); 
 
                 .card {
-                    width: 248px;
+                    width: calc(#{$px-50} * 5 - #{$px-2});
                     margin-bottom: $px-10;
 
                     figure {
-                        border-top-left-radius: 7px;
-                        border-top-right-radius: 7px;
+                        border-top-left-radius: $px-7;
+                        border-top-right-radius: $px-7;
                         margin-bottom: 0;
-                        height: 124px;
+                        height: calc(#{$px-50} * 2 + #{$px-24});
                         overflow: hidden;
-
 
                         img {
                             width: auto;
                             display: block;
-                            margin-left:-30px;
+                            margin-left: -30px;
                         }
                     }
 
@@ -498,23 +494,23 @@ body {
                         h3 {
                             font-size: $px-16;
                             font-family: $poppinsBold;
-                            margin-bottom: 10px;
-                            height: 40px;
+                            margin-bottom: $px-10;
+                            height: $px-40;
                             overflow: hidden;
                         }
 
                         p {
-                            height: 96px;
+                            height: calc(#{$px-50} * 2 - #{$px-4});
                             overflow: hidden;
                         }
-                        
+
                     }
                 }
 
                 .link-read-more {
                     height: $px-40;
                     margin: $px-15 $px-5 0;
-        
+
                     a {
                         font-size: $px-16;
                         line-height: $px-22;
