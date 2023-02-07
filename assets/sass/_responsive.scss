@@ -251,15 +251,78 @@
                 text-align: center;
             }
 
-            .card {
-                h3 {
-                    font-size: $px-18;
-                }
-
-                p {
-                    font-size: $px-18;
-                    line-height: $px-25;
-                    text-align: left;
+            .stage {
+                position: unset;
+                height: unset;
+                overflow: unset;
+    
+                .scroll {
+                    padding: 0;
+    
+                    position: unset;
+                    left: unset;
+                    width: unset;
+    
+                    .card {
+                        width: unset;
+                        margin-bottom: $px-10;
+    
+                        figure {
+                            height: auto;
+                            margin: 0;
+    
+    
+                            img {
+                                width: 100%;
+                                margin: 0;
+                            }
+                        }
+    
+                        .card-body {
+                            padding: $px-15;
+    
+                            h3 {
+                                font-size: $px-18;
+                                line-height: 25px;
+                                height: auto;
+                            }
+            
+                            p {
+                                font-size: $px-18;
+                                line-height: $px-25;
+                                text-align: left;
+                                height: auto;
+                            }
+                            
+                        }
+                    }
+    
+                    .link-read-more {
+                        height: $px-40;
+                        margin: $px-15 $px-5 0;
+            
+                        a {
+                            font-size: $px-16;
+                            line-height: $px-22;
+                            color: $blue-005CB1;
+                            font-family: $poppinsMedium;
+                            text-decoration: none;
+                            padding-right: $px-20;
+                            background: transparent url('../img/Icon-arrow-up-right.png') right center no-repeat;
+                        }
+                    }
+    
+                    .owl-theme {
+                        .owl-nav {
+                            margin: -10px 10px 0;
+    
+                            button {
+                                &.owl-next {
+                                    margin-right: 100px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

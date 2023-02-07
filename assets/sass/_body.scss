@@ -17,30 +17,6 @@ body {
         margin-bottom: $px-3;
     }
 
-    .btn {
-        width: 100%;
-        height: $px-40;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100px;
-        border: none;
-        background-color: $green-037887;
-        font-family: $poppinsMedium;
-
-        &:hover {
-            background-color: $blue-004165;
-        }
-
-        &:active,
-        &:focus,
-        &:active:focus {
-            background-color: $blue-004165;
-            border: none;
-            box-shadow: none;
-        }
-    }
-
     .header {
         background-color: $blue-004165;
 
@@ -198,6 +174,30 @@ body {
     .sec-01 {
         background-color: $grey-E2E2E2;
 
+        .btn {
+            width: 100%;
+            height: $px-40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: none;
+            background-color: $green-037887;
+            font-family: $poppinsMedium;
+    
+            &:hover {
+                background-color: $blue-004165;
+            }
+    
+            &:active,
+            &:focus,
+            &:active:focus {
+                background-color: $blue-004165;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
         .pr-0 {
             padding-right: 0;
         }
@@ -286,7 +286,6 @@ body {
                 color: $black-333333;
             }
         }
-
 
         .stage {
             position: relative;
@@ -460,9 +459,89 @@ body {
             line-height: $px-30;
         }
 
-        h3 {
-            font-size: $px-16;
-            font-family: $poppinsBold;
+        
+
+        .stage {
+            position: relative;
+            height: 430px;
+            overflow: visible;
+
+            .scroll {
+                padding: 0;
+
+                position: absolute;
+                left: 0;
+                width: 510px;
+
+                .card {
+                    width: 248px;
+                    margin-bottom: $px-10;
+
+                    figure {
+                        border-top-left-radius: 7px;
+                        border-top-right-radius: 7px;
+                        margin-bottom: 0;
+                        height: 124px;
+                        overflow: hidden;
+
+
+                        img {
+                            width: auto;
+                            display: block;
+                            margin-left:-30px;
+                        }
+                    }
+
+                    .card-body {
+                        padding: $px-15;
+
+                        h3 {
+                            font-size: $px-16;
+                            font-family: $poppinsBold;
+                            margin-bottom: 10px;
+                            height: 40px;
+                            overflow: hidden;
+                        }
+
+                        p {
+                            height: 96px;
+                            overflow: hidden;
+                        }
+                        
+                    }
+                }
+
+                .link-read-more {
+                    height: $px-40;
+                    margin: $px-15 $px-5 0;
+        
+                    a {
+                        font-size: $px-16;
+                        line-height: $px-22;
+                        color: $blue-005CB1;
+                        font-family: $poppinsMedium;
+                        text-decoration: none;
+                        padding-right: $px-20;
+                        background: transparent url('../img/Icon-arrow-up-right.png') right center no-repeat;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .owl-theme {
+                    .owl-nav {
+                        margin: -10px 10px 0;
+
+                        button {
+                            &.owl-next {
+                                margin-right: 100px;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

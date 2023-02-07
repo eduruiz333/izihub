@@ -106,32 +106,6 @@ body .card {
           filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
   margin-bottom: 0.188rem;
 }
-body .btn {
-  width: 100%;
-  height: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100px;
-  border: none;
-  background-color: #037887;
-  font-family: "PoppinsMedium", sans-serif;
-}
-body .btn:hover {
-  background-color: #004165;
-}
-body .btn:active, body .btn:focus, body .btn:active:focus {
-  background-color: #004165;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 body .header {
   background-color: #004165;
 }
@@ -249,6 +223,32 @@ body .list-type-check li:last-child {
 }
 body .sec-01 {
   background-color: #E2E2E2;
+}
+body .sec-01 .btn {
+  width: 100%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  border: none;
+  background-color: #037887;
+  font-family: "PoppinsMedium", sans-serif;
+}
+body .sec-01 .btn:hover {
+  background-color: #004165;
+}
+body .sec-01 .btn:active, body .sec-01 .btn:focus, body .sec-01 .btn:active:focus {
+  background-color: #004165;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 body .sec-01 .pr-0 {
   padding-right: 0;
@@ -469,9 +469,68 @@ body .sec-05 h1 {
   font-size: 1.625rem;
   line-height: 1.875rem;
 }
-body .sec-05 h3 {
+body .sec-05 .stage {
+  position: relative;
+  height: 430px;
+  overflow: visible;
+}
+body .sec-05 .stage .scroll {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  width: 510px;
+}
+body .sec-05 .stage .scroll .card {
+  width: 248px;
+  margin-bottom: 0.625rem;
+}
+body .sec-05 .stage .scroll .card figure {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-bottom: 0;
+  height: 124px;
+  overflow: hidden;
+}
+body .sec-05 .stage .scroll .card figure img {
+  width: auto;
+  display: block;
+  margin-left: -30px;
+}
+body .sec-05 .stage .scroll .card .card-body {
+  padding: 0.938rem;
+}
+body .sec-05 .stage .scroll .card .card-body h3 {
   font-size: 1rem;
   font-family: "poppinsBold", sans-serif;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+}
+body .sec-05 .stage .scroll .card .card-body p {
+  height: 96px;
+  overflow: hidden;
+}
+body .sec-05 .stage .scroll .link-read-more {
+  height: 2.5rem;
+  margin: 0.938rem 0.313rem 0;
+}
+body .sec-05 .stage .scroll .link-read-more a {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #005CB1;
+  font-family: "PoppinsMedium", sans-serif;
+  text-decoration: none;
+  padding-right: 1.25rem;
+  background: transparent url("../img/Icon-arrow-up-right.png") right center no-repeat;
+}
+body .sec-05 .stage .scroll .link-read-more a:hover {
+  text-decoration: underline;
+}
+body .sec-05 .stage .scroll .owl-theme .owl-nav {
+  margin: -10px 10px 0;
+}
+body .sec-05 .stage .scroll .owl-theme .owl-nav button.owl-next {
+  margin-right: 100px;
 }
 body .sec-06 {
   margin-top: 1.875rem;
@@ -800,13 +859,61 @@ body .sec-03 li {
     font-size: 1.25rem;
     text-align: center;
   }
-  body .sec-05 .card h3 {
-    font-size: 1.125rem;
+  body .sec-05 .stage {
+    position: unset;
+    height: unset;
+    overflow: unset;
   }
-  body .sec-05 .card p {
+  body .sec-05 .stage .scroll {
+    padding: 0;
+    position: unset;
+    left: unset;
+    width: unset;
+  }
+  body .sec-05 .stage .scroll .card {
+    width: unset;
+    margin-bottom: 0.625rem;
+  }
+  body .sec-05 .stage .scroll .card figure {
+    height: auto;
+    margin: 0;
+  }
+  body .sec-05 .stage .scroll .card figure img {
+    width: 100%;
+    margin: 0;
+  }
+  body .sec-05 .stage .scroll .card .card-body {
+    padding: 0.938rem;
+  }
+  body .sec-05 .stage .scroll .card .card-body h3 {
+    font-size: 1.125rem;
+    line-height: 25px;
+    height: auto;
+  }
+  body .sec-05 .stage .scroll .card .card-body p {
     font-size: 1.125rem;
     line-height: 1.563rem;
     text-align: left;
+    height: auto;
+  }
+  body .sec-05 .stage .scroll .link-read-more {
+    height: 2.5rem;
+    margin: 0.938rem 0.313rem 0;
+  }
+  body .sec-05 .stage .scroll .link-read-more a {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #005CB1;
+    font-family: "PoppinsMedium", sans-serif;
+    text-decoration: none;
+    padding-right: 1.25rem;
+    background: transparent url("../img/Icon-arrow-up-right.png") right center no-repeat;
+  }
+  body .sec-05 .stage .scroll .owl-theme .owl-nav {
+    margin: -10px 10px 0;
+  }
+  body .sec-05 .stage .scroll .owl-theme .owl-nav button.owl-next {
+    margin-right: 100px;
   }
   body .sec-07 .footer .box-footer-1 {
     padding-top: 3.125rem;
