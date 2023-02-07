@@ -2,7 +2,7 @@ jQuery("#carousel_01").owlCarousel({
     autoplay: false,
     lazyLoad: true,
     loop: true,
-    margin:10,
+    margin: 10,
     responsiveClass: true,
     autoHeight: false,
     autoplayTimeout: 7000,
@@ -49,7 +49,7 @@ jQuery("#carousel_02").owlCarousel({
 jQuery("#carousel_03").owlCarousel({
     autoplay: false,
     lazyLoad: true,
-    margin:10,
+    margin: 10,
     loop: true,
     responsiveClass: true,
     autoHeight: false,
@@ -74,9 +74,9 @@ jQuery("#carousel_03").owlCarousel({
 })
 
 $(document).ready(function () {
-    $(".btn-inicio").click(function() {
-        $("html, body").animate({scrollTop: 0}, 800)
-    })          
+    $(".btn-inicio").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800)
+    })
 })
 
 
@@ -98,4 +98,31 @@ for (let i = 0; i < getContentHeight.length; i++) {
         }
     }
 }
+
+
+
+
+const emailInput = document.querySelector('#email')
+const submitButton = document.querySelector('.get-email')
+
+emailInput.addEventListener('input', (event) => {
+    const email = event.target.value
+
+    if (email.includes('@') && email.includes('.')) {
+        submitButton.classList.remove('disabled')
+    } else {
+        submitButton.classList.add('disabled')
+    }
+})
+
+
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    const email = emailInput.value
+    localStorage.setItem('email', email)
+    window.location = 'izihub-formulario.html'
+});
+
+const getCache = localStorage.getItem('Autor')
+const credits = document.querySelector('.credits')
 

@@ -67,17 +67,6 @@
             .btn {
                 font-size: $px-16;
                 height: calc(#{$px-40 + $px-8});
-
-                &.arrow-right-white {
-                    &:hover {
-                        background-color: $blue-004165;
-                    }
-
-                    .comp-text {
-                        display: inline-block;
-                        margin-left: $px-3;
-                    }
-                }
             }
 
             input {
