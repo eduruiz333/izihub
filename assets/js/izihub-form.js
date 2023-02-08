@@ -2,9 +2,11 @@
 const submitButton = document.querySelector('.get-email')
 const retrievedEmail = localStorage.getItem('email')
 const emailInput = document.querySelector('#input-email')
+
 if (retrievedEmail) {
   emailInput.value = retrievedEmail
 }
+
 
 // VERIFICA SE ATENDE AOS REQUISITOS DE PREENCHIMENTO DE EMAIL
 emailInput.addEventListener('input', function () {
@@ -15,9 +17,11 @@ emailInput.addEventListener('input', function () {
   }
 })
 
+
 // VALIDA SE O CAMPO NOME ESTÁ PREENCHIDO E SE TEM AO MENOS 3 CARACTERES
 const inputName = document.querySelector('#input-name')
 document.onload = inputName.focus()
+
 inputName.addEventListener('input', function () {
   if (inputName.value.trim() !== '' && inputName.value.length >= 3) {
     inputName.classList.add('valid')
@@ -26,21 +30,25 @@ inputName.addEventListener('input', function () {
   }
 })
 
+
 // APLICA MÁSCARA DO TELEFONE
 function mascara(o, f) {
   v_obj = o
   v_fun = f
   setTimeout('execmascara()', 1)
 }
+
 function execmascara() {
   v_obj.value = v_fun(v_obj.value)
 }
+
 function mtel(v) {
   v = v.replace(/\D/g, '') //Remove tudo o que não é número
   v = v.replace(/^(\d{2})(\d)/g, '($1) $2') //Coloca parênteses em volta dos dois primeiros dígitos
   v = v.replace(/(\d)(\d{4})$/, '$1-$2') //Coloca hífen entre o quarto e o quinto dígitos
   return v
 }
+
 function id(el) {
   return document.getElementById(el)
 }
@@ -51,6 +59,7 @@ window.onload = function () {
   }
 }
 
+
 // VALIDA SE O CAMPO TELEFONE ESTÁ PREENCHIDO
 const input = document.querySelector('#input-tel')
 input.addEventListener('input', function () {
@@ -60,9 +69,4 @@ input.addEventListener('input', function () {
     input.classList.remove('valid')
   }
 })
-
-
-
-
-
 
