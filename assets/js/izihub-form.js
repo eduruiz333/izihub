@@ -54,7 +54,7 @@ window.onload = function () {
 // VALIDA SE O CAMPO TELEFONE ESTÁ PREENCHIDO
 const input = document.querySelector('#input-tel')
 input.addEventListener('input', function () {
-  if (input.value.trim() !== '' && input.value.length >= 15) {
+  if (input.value.trim() !== '' && input.value.length >= 14) {
     input.classList.add('valid')
   } else {
     input.classList.remove('valid')
