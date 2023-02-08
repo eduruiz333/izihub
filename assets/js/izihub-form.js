@@ -2,11 +2,9 @@
 const submitButton = document.querySelector('.get-email')
 const retrievedEmail = localStorage.getItem('email')
 const emailInput = document.querySelector('#input-email')
-
 if (retrievedEmail) {
   emailInput.value = retrievedEmail
 }
-
 
 
 // VERIFICA SE ATENDE AOS REQUISITOS DE PREENCHIMENTO DE EMAIL
@@ -22,7 +20,6 @@ emailInput.addEventListener('input', function () {
 // VALIDA SE O CAMPO NOME ESTÁ PREENCHIDO E SE TEM AO MENOS 3 CARACTERES
 const inputName = document.querySelector('#input-name')
 document.onload = inputName.focus()
-
 inputName.addEventListener('input', function () {
   if (inputName.value.trim() !== '' && inputName.value.length >= 3) {
     inputName.classList.add('valid')
@@ -38,7 +35,6 @@ function mascara(o, f) {
   v_fun = f
   setTimeout('execmascara()', 1)
 }
-
 function execmascara() {
   v_obj.value = v_fun(v_obj.value)
 }
@@ -80,7 +76,7 @@ document.getElementById('check-termos').addEventListener('click', function () {
 
 
 // VERIFICA SE TODOS OS CAMPOS ESTÃO PREENCHIDOS CORRETAMENTE E EXIBE AS MODAIS APROPRIADAS
-document.querySelector('.send').addEventListener('click', function() {
+document.querySelector('.send').addEventListener('click', function () {
   const inputs = document.querySelectorAll('.required')
   const areAllValid = [...inputs].every(input => input.classList.contains('valid'))
   if (areAllValid) {
