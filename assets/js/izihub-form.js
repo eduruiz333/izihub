@@ -55,12 +55,12 @@ window.onload = function () {
 
 
 // VALIDA SE O CAMPO TELEFONE ESTÁ PREENCHIDO
-const input = document.querySelector('#input-tel')
-input.addEventListener('input', function () {
-  if (input.value.trim() !== '' && input.value.length >= 14) {
-    input.classList.add('valid')
+const inputTel = document.querySelector('#input-tel')
+inputTel.addEventListener('input', function () {
+  if (inputTel.value.trim() !== '' && inputTel.value.length >= 14) {
+    inputTel.classList.add('valid')
   } else {
-    input.classList.remove('valid')
+    inputTel.classList.remove('valid')
   }
 })
 
