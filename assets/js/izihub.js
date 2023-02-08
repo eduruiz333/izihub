@@ -83,15 +83,12 @@ $(document).ready(function () {
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')
 const btn = `<button class="btn-read-more"></button>`
-
 for (let i = 0; i < getContentHeight.length; i++) {
     const alturas = getContentHeight[i].offsetHeight
-
     if (alturas > 165) {
         getContentHeight[i].classList.add('crop')
         createButton[i].innerHTML = btn
         createButton[i].addEventListener("click", addButton)
-
         function addButton() {
             getContentHeight[i].classList.toggle('crop')
             createButton[i].classList.toggle('less')
@@ -100,21 +97,16 @@ for (let i = 0; i < getContentHeight.length; i++) {
 }
 
 
-
-
 const emailInput = document.querySelector('#email')
 const submitButton = document.querySelector('.get-email')
-
 emailInput.addEventListener('input', (event) => {
     const email = event.target.value
-
     if (email.includes('@') && email.includes('.')) {
         submitButton.classList.remove('disabled')
     } else {
         submitButton.classList.add('disabled')
     }
 })
-
 
 submitButton.addEventListener('click', (event) => {
     event.preventDefault()
@@ -123,6 +115,4 @@ submitButton.addEventListener('click', (event) => {
     window.location = 'izihub-formulario.html'
 });
 
-const getCache = localStorage.getItem('Autor')
-const credits = document.querySelector('.credits')
 
