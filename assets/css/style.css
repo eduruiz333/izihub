@@ -650,13 +650,17 @@ body .sec-08 .box-form-2 form .form-group {
 body .sec-08 .box-form-2 form .form-group .form-control {
   border-color: #6E6F74;
   border-radius: 0.625rem;
-  padding: 0.625rem 0 0.625rem 1.25rem;
+  padding: 0.625rem 1.563rem 0.625rem 1.25rem;
   opacity: 0.6;
 }
 body .sec-08 .box-form-2 form .form-group .form-control:focus {
   -webkit-box-shadow: 0 0 0 0;
           box-shadow: 0 0 0 0;
   border-color: #6E6F74;
+}
+body .sec-08 .box-form-2 form .form-group .form-control.valid {
+  border-color: #009900;
+  background: url("../img/checked-green.png") 98% center no-repeat;
 }
 body .sec-08 .box-form-2 form .form-group span {
   position: relative;

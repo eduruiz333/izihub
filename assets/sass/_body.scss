@@ -230,7 +230,6 @@ body {
 
         .btn {
             font-size: $px-16;
-            
 
             &.arrow-right {
                 background: $green-037887 url('../img/Icon-arrow-white-right.png') 80% center no-repeat;
@@ -675,12 +674,17 @@ body {
                     .form-control {
                         border-color: $grey-6E6F74;
                         border-radius: $px-10;
-                        padding: $px-10 0 $px-10 $px-20;
+                        padding: $px-10 $px-25 $px-10 $px-20;
                         opacity: 0.6;
 
                         &:focus {
                             box-shadow: 0 0 0 0;
                             border-color: $grey-6E6F74;
+                        }
+
+                        &.valid {
+                            border-color: $green-009900;
+                            background: url('../img/checked-green.png') 98% center no-repeat;
                         }
                     }
 
@@ -717,4 +721,6 @@ body {
 
         }
     }
+
+
 }

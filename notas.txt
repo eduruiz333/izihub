@@ -29,18 +29,16 @@ https://codepen.io/jrog/pen/OjeLQZ
 
 
 TAREFAS
-
-Ajustar altura das imagens dos títulos dos cards - OK
-Ajustar geral do slider deslocado - OK
-Colocar os ícones nos títulos do segundo slider
 Fazer animação da seta dos botões
-Finalizar o último slider (tamanhos etc)
-Ajustes de texto e imagens que a Stella enviou
+
+
+
 
 a página 2 contém duas modais, utilizando recursos do bootstrap versão 5.2
-Abaixo são os códigos das modais
+
 
 as instruções abaixo são todas referentes à página 2.
+
 Ao carregar a página 2, se o campo email estiver preenchido com o valor da retrievedEmail, aplique neste campo email a classe "valid", caso contrário, aplique a classe "invalid".
 
 escrever um código de validação para o formulário a página 2, ao clicar no botão enviar, sendo que se o usuário alterar o campo email, uma nova validação deverá ser feita, seguindo os mesmos critŕios da validação do campo de e-mail da página 1, quando esses critérios forem atendidos, aplicar neste campo email a classe valid, caso contrário, aplicar a classe invalid

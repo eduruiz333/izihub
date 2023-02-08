@@ -1,4 +1,5 @@
-jQuery("#carousel_01").owlCarousel({
+// CONFIGURAÇÕES DOS CARROSSÉIS
+jQuery('#carousel_01').owlCarousel({
     autoplay: false,
     lazyLoad: true,
     loop: true,
@@ -19,7 +20,7 @@ jQuery("#carousel_01").owlCarousel({
     }
 })
 
-jQuery("#carousel_02").owlCarousel({
+jQuery('#carousel_02').owlCarousel({
     autoplay: false,
     lazyLoad: false,
     loop: true,
@@ -46,7 +47,7 @@ jQuery("#carousel_02").owlCarousel({
     }
 })
 
-jQuery("#carousel_03").owlCarousel({
+jQuery('#carousel_03').owlCarousel({
     autoplay: false,
     lazyLoad: true,
     margin: 10,
@@ -74,12 +75,13 @@ jQuery("#carousel_03").owlCarousel({
 })
 
 $(document).ready(function () {
-    $(".btn-inicio").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 800)
+    $('.btn-inicio').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800)
     })
 })
 
 
+// CRIA OS BOTÕES LEIA MAIS
 const getContentHeight = document.querySelectorAll('.card-height')
 const createButton = document.querySelectorAll('.create-btn-expand')
 const btn = `<button class="btn-read-more"></button>`
@@ -88,7 +90,7 @@ for (let i = 0; i < getContentHeight.length; i++) {
     if (alturas > 165) {
         getContentHeight[i].classList.add('crop')
         createButton[i].innerHTML = btn
-        createButton[i].addEventListener("click", addButton)
+        createButton[i].addEventListener('click', addButton)
         function addButton() {
             getContentHeight[i].classList.toggle('crop')
             createButton[i].classList.toggle('less')
@@ -97,6 +99,7 @@ for (let i = 0; i < getContentHeight.length; i++) {
 }
 
 
+// VALIDA O CAMPO E-MAIL E TRANSFERE PARA A PÁGINA DO FORMULÁRIO
 const emailInput = document.querySelector('#email')
 const submitButton = document.querySelector('.get-email')
 emailInput.addEventListener('input', (event) => {
@@ -108,11 +111,16 @@ emailInput.addEventListener('input', (event) => {
     }
 })
 
+document.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+        submitButton.click()
+    }
+})
 submitButton.addEventListener('click', (event) => {
     event.preventDefault()
     const email = emailInput.value
     localStorage.setItem('email', email)
     window.location = 'izihub-formulario.html'
-});
+})
 
 
