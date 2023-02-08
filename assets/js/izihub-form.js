@@ -8,6 +8,7 @@ if (retrievedEmail) {
 }
 
 
+
 // VERIFICA SE ATENDE AOS REQUISITOS DE PREENCHIMENTO DE EMAIL
 emailInput.addEventListener('input', function () {
   if (emailInput.value.trim() !== '' && emailInput.value.includes('@') && emailInput.value.includes('.')) {
@@ -41,18 +42,15 @@ function mascara(o, f) {
 function execmascara() {
   v_obj.value = v_fun(v_obj.value)
 }
-
 function mtel(v) {
   v = v.replace(/\D/g, '') //Remove tudo o que não é número
   v = v.replace(/^(\d{2})(\d)/g, '($1) $2') //Coloca parênteses em volta dos dois primeiros dígitos
   v = v.replace(/(\d)(\d{4})$/, '$1-$2') //Coloca hífen entre o quarto e o quinto dígitos
   return v
 }
-
 function id(el) {
   return document.getElementById(el)
 }
-
 window.onload = function () {
   id('input-tel').onkeyup = function () {
     mascara(this, mtel)
@@ -70,3 +68,27 @@ input.addEventListener('input', function () {
   }
 })
 
+
+// VALIDA SE O CHECKBOX TERMOS ESTÁ MARCADO
+document.getElementById('check-termos').addEventListener('click', function () {
+  if (this.checked) {
+    this.classList.add('valid')
+  } else {
+    this.classList.remove('valid')
+  }
+})
+
+
+// VERIFICA SE TODOS OS CAMPOS ESTÃO PREENCHIDOS CORRETAMENTE E EXIBE AS MODAIS APROPRIADAS
+document.querySelector('.send').addEventListener('click', function() {
+  const inputs = document.querySelectorAll('.required')
+  const areAllValid = [...inputs].every(input => input.classList.contains('valid'))
+  if (areAllValid) {
+    $('#modalSucesso').modal('show')
+  } else {
+    $('#modalErro').modal('show')
+  }
+})
+
+// AO ENVIAR O FORMULÁRIO, LIMPAR O LOCALSTORAGE
+// localStorage.removeItem('email')

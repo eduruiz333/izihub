@@ -71,21 +71,21 @@
 									<form action="" id="get-lead-izihub">
 										<div class="form-group">
 											<label for="input-email" class="label-email"></label>
-											<input type="email" class="form-control valid" id="input-email"
+											<input type="email" class="form-control required valid" id="input-email"
 												placeholder="Digite seu email" maxlength="150" required>
 											<span>E-mail:</span>
 										</div>
 
 										<div class="form-group">
 											<label for="input-nome"></label>
-											<input type="text" class="form-control" id="input-name"
+											<input type="text" class="form-control required" id="input-name"
 												placeholder="Digite seu nome" maxlength="150" required>
 											<span>Nome:</span>
 										</div>
 
 										<div class="form-group form">
 											<label for="input-telefone"></label>
-											<input type="tel" class="form-control" id="input-tel"
+											<input type="tel" class="form-control required" id="input-tel"
 												placeholder="Digite seu telefone com DDD" maxlength="16" required>
 											<span>Telefone:</span>
 										</div>
@@ -98,7 +98,7 @@
 											</div>
 
 											<div class="form-group form-check ">
-												<input type="checkbox" class="form-check-input" id="check-termos">
+												<input type="checkbox" class="form-check-input required" id="check-termos" required>
 												<label class="form-check-label" for="check-termos">Li e estou ciente das
 													condições descritos nesta
 													<a
@@ -107,8 +107,7 @@
 											</div>
 										</div>
 
-										<button type="button" class="btn btn-primary" data-toggle="modal"
-											data-target="#success">
+										<button type="button" class="btn btn-primary send">
 											Enviar
 										</button>
 
@@ -252,42 +251,34 @@
 		</div>
 	</footer>
 
-	<!-- Modal -->
-	<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="ModalSucessoLabel" aria-hidden="true">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="modalSuccess">Título do modal</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h1 class="modal-title fs-5" id="ModalSucessoLabel">Sucesso</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					...
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-					<button type="button" class="btn btn-primary">Salvar mudanças</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="modalError" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade" id="modalErro" tabindex="-1" aria-labelledby="ModaErrolLabel" aria-hidden="true">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="modalError">Título do modal</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h1 class="modal-title fs-5" id="ModaErrolLabel">Erro</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					...
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-					<button type="button" class="btn btn-primary">Salvar mudanças</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
