@@ -686,6 +686,60 @@ body .sec-08 .box-form-2 form .validation-check .form-check input[type=checkbox]
 body .sec-08 .box-form-2 form .btn {
   background-color: #E7E7E7;
 }
+body .sec-09 .modal {
+  font-family: "PoppinsMedium", sans-serif;
+}
+body .sec-09 .modal * {
+  border: none;
+}
+body .sec-09 .modal .modal-content {
+  width: calc(3.125rem * 6 + 1.75rem);
+  padding: 0 0.938rem;
+  margin: 3.125rem auto 0;
+  border-radius: 0.625rem;
+}
+body .sec-09 .modal .modal-content .modal-header {
+  display: unset;
+  text-align: center;
+  padding-bottom: 0;
+}
+body .sec-09 .modal .modal-content .modal-header figure {
+  margin: -60px auto 0.625rem;
+}
+body .sec-09 .modal .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body .sec-09 .modal .modal-content .modal-footer {
+  padding-bottom: 1.875rem;
+}
+body .sec-09 .modal .modal-content h1 {
+  font-family: "poppinsBold", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+body .sec-09 .modal .modal-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #444444;
+  margin-bottom: 0.625rem;
+}
+body .sec-09 .modal .modal-content .btn {
+  font-size: 1rem;
+  color: #FFFFFF;
+  border-radius: 1.563rem;
+  width: 100%;
+  height: calc(3rem);
+  -webkit-filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.25));
+}
+body .sec-09 .modal .modal-content .btn.btn-sucesso {
+  background-color: #009900;
+}
+body .sec-09 .modal .modal-content .btn.btn-erro {
+  background-color: #F67273;
+}
 
 /* Footer
 --------------------------------------------------- */
