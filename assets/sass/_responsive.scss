@@ -346,11 +346,10 @@
         }
 
         .sec-07 {
-            .footer {
+            .box-footer {
                 .box-footer-1 {
-                    padding-top: $px-50;
+                    padding: $px-50 0 $px-20 $px-20;
                     border-bottom: $px-1 solid $white-FFFFFF;
-                    padding-bottom: $px-20;
 
                     .medias {
                         margin-left: 60px;
@@ -405,9 +404,7 @@
                             text-decoration: none;
                             font-size: $px-14;
                         }
-
                     }
-
                 }
 
                 .box-footer-3 {
@@ -417,7 +414,6 @@
                         font-family: $poppinsMedium;
                     }
                 }
-
             }
         }
 
@@ -491,13 +487,10 @@
                 }
 
                 .box-footer-2 {
-
                     h3 {
                         font-size: $px-18;
                     }
-
                 }
-
             }
         }
     }
@@ -546,16 +539,20 @@
             .sec-07 {
                 .box-footer {
                     .box-footer-1 {
-                        p {
-                            font-size: $px-20;
-                            text-align: center;
-                            font-family: $poppinsMedium;
-                        }
-
                         .medias {
                             span {
                                 padding-left: $px-30;
                             }
+
+                            .social-medias {
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+
+                    .box-footer-2 {
+                        .autoatendimento {
+                            padding-left: 110px;
                         }
                     }
                 }

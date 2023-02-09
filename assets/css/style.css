@@ -619,6 +619,28 @@ body .sec-06 .accordion-faq .card .btn:not(.collapsed)::after {
 body .sec-06 .accordion-faq .card .btn:hover {
   text-decoration: none;
 }
+body .sec-06 .accordion-faq .faq-read-more .more-content.content-hidden {
+  display: none;
+}
+body .sec-06 .accordion-faq .faq-read-more .btn-read-more {
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #005CB1;
+  font-family: "PoppinsMedium", sans-serif;
+  border: none;
+  padding-right: 1.25rem;
+  background: transparent url("../img/Icon-arrow-up.png") right center no-repeat;
+}
+body .sec-06 .accordion-faq .faq-read-more .btn-read-more::before {
+  content: "Ver menos";
+}
+body .sec-06 .accordion-faq .faq-read-more .btn-read-more.collapsed {
+  background-image: url("../img/Icon-arrow-down.png");
+}
+body .sec-06 .accordion-faq .faq-read-more .btn-read-more.collapsed::before {
+  content: "Ver mais";
+}
 body .sec-08 .box-form-1 {
   background-color: #F5F5F5;
   padding: 20px 0 0 20px;
@@ -1070,53 +1092,52 @@ footer .sec-07 .box-footer .box-footer-1 .medias .social-medias li {
   body .sec-05 .stage .scroll .owl-theme .owl-nav button.owl-next {
     margin-right: 100px;
   }
-  body .sec-07 .footer .box-footer-1 {
-    padding-top: 3.125rem;
+  body .sec-07 .box-footer .box-footer-1 {
+    padding: 3.125rem 0 1.25rem 1.25rem;
     border-bottom: 0.063rem solid #FFFFFF;
-    padding-bottom: 1.25rem;
   }
-  body .sec-07 .footer .box-footer-1 .medias {
+  body .sec-07 .box-footer .box-footer-1 .medias {
     margin-left: 60px;
   }
-  body .sec-07 .footer .box-footer-1 .medias span {
+  body .sec-07 .box-footer .box-footer-1 .medias span {
     font-size: 1.25rem;
     font-family: "PoppinsMedium", sans-serif;
     margin-bottom: 0.313rem;
   }
-  body .sec-07 .footer .box-footer-2 {
+  body .sec-07 .box-footer .box-footer-2 {
     border-bottom: 0.063rem solid #FFFFFF;
     padding-bottom: 1.25rem;
     margin-bottom: 2.5rem;
   }
-  body .sec-07 .footer .box-footer-2 h2 {
+  body .sec-07 .box-footer .box-footer-2 h2 {
     padding-top: 2.5rem;
     font-size: 1.25rem;
     font-family: "poppinsSemiBold", sans-serif;
   }
-  body .sec-07 .footer .box-footer-2 h3 {
+  body .sec-07 .box-footer .box-footer-2 h3 {
     font-size: 0.875rem;
     padding: 0.625rem 0;
   }
-  body .sec-07 .footer .box-footer-2 dl dt {
+  body .sec-07 .box-footer .box-footer-2 dl dt {
     font-size: 0.875rem;
     font-family: "PoppinsMedium", sans-serif;
   }
-  body .sec-07 .footer .box-footer-2 dl dd {
+  body .sec-07 .box-footer .box-footer-2 dl dd {
     font-size: 1.125rem;
     font-family: "poppinsSemiBold", sans-serif;
   }
-  body .sec-07 .footer .box-footer-2 .disclaimer {
+  body .sec-07 .box-footer .box-footer-2 .disclaimer {
     font-size: 0.75rem;
     font-family: "PoppinsMedium", sans-serif;
   }
-  body .sec-07 .footer .box-footer-2 .autoatendimento a {
+  body .sec-07 .box-footer .box-footer-2 .autoatendimento a {
     display: block;
     margin-bottom: 1.25rem;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 0.875rem;
   }
-  body .sec-07 .footer .box-footer-3 p {
+  body .sec-07 .box-footer .box-footer-3 p {
     text-align: center;
     font-size: 0.75rem;
     font-family: "PoppinsMedium", sans-serif;
@@ -1182,13 +1203,16 @@ footer .sec-07 .box-footer .box-footer-1 .medias .social-medias li {
     padding: 0 75px;
     margin-top: 1.5rem;
   }
-  body footer .sec-07 .box-footer .box-footer-1 p {
-    font-size: 1.25rem;
-    text-align: center;
-    font-family: "PoppinsMedium", sans-serif;
-  }
   body footer .sec-07 .box-footer .box-footer-1 .medias span {
     padding-left: 1.875rem;
+  }
+  body footer .sec-07 .box-footer .box-footer-1 .medias .social-medias {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .sec-07 .box-footer .box-footer-2 .autoatendimento {
+    padding-left: 110px;
   }
 }
 @media (min-width: 1600px) {

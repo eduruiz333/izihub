@@ -607,6 +607,38 @@ body {
                 }
 
             }
+
+            .faq-read-more {
+
+                .more-content {
+
+                    &.content-hidden {
+                        display: none;
+                    }
+                }
+
+                .btn-read-more {
+                    margin-top: $px-10;
+                    font-size: $px-16;
+                    line-height: $px-20;
+                    color: $blue-005CB1;
+                    font-family: $poppinsMedium;
+                    border: none;
+                    padding-right: $px-20;
+                    background: transparent url('../img/Icon-arrow-up.png') right center no-repeat;
+                    &::before {
+                        content: 'Ver menos';
+                    }
+
+                    &.collapsed {
+                        background-image: url('../img/Icon-arrow-down.png');
+
+                        &::before {
+                            content: 'Ver mais';
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -74,6 +74,8 @@ jQuery('#carousel_03').owlCarousel({
     }
 })
 
+
+// CRIA BOTÃO VOLTAR PARA VERSÃO DESK
 $(document).ready(function () {
     $('.btn-inicio').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 800)
@@ -110,7 +112,6 @@ emailInput.addEventListener('input', (event) => {
         submitButton.classList.add('disabled')
     }
 })
-
 document.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         submitButton.click()
@@ -124,3 +125,10 @@ submitButton.addEventListener('click', (event) => {
 })
 
 
+// LER MAIS FAQ
+const btnMoreFaq = document.querySelector('.btn-faq')
+const showMore = document.querySelector('.more-content')
+btnMoreFaq.addEventListener('click', function() {
+    showMore.classList.toggle('content-hidden')
+    btnMoreFaq.classList.toggle('collapsed')
+  }, { passive: true })
