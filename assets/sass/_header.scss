@@ -1,3 +1,29 @@
 header {
-    
+    .header {
+        background-color: $blue-004165;
+
+        a {
+            color: $white-FFFFFF;
+            text-decoration: none;
+            font-family: $poppinsSemiBold;
+            font-size: $px-16;
+
+            &:hover {
+                color: $white-FFFFFF;
+                text-decoration: underline;
+            }
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .logo-izihub {
+            width: 50%;
+        }
+
+        .logo-certisign {
+            width: 27%;
+        }
+    }
 }

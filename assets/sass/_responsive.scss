@@ -1,5 +1,34 @@
 // xs — Extra Small Screens
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+    .sec-08 {
+        .box-form-1 {
+            .btn-home {
+                padding-top: 5rem;
+
+                a {
+                    padding-left: 15px;
+                    text-align: left;
+                    color: $blue-005CB1;
+
+                    &.arrow-left-blue {
+                        background: url(../img/Icon-arrow-blue-left.png) 0 center no-repeat;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &:focus,
+                    &:focus-visible {
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // s — Small Screens
 @media (min-width: 640px) {
@@ -244,52 +273,52 @@
                 position: unset;
                 height: unset;
                 overflow: unset;
-    
+
                 .scroll {
                     padding: 0;
-    
+
                     position: unset;
                     left: unset;
                     width: unset;
-    
+
                     .card {
                         width: unset;
                         margin-bottom: $px-10;
-    
+
                         figure {
                             height: auto;
                             margin: 0;
-    
-    
+
+
                             img {
                                 width: 100%;
                                 margin: 0;
                             }
                         }
-    
+
                         .card-body {
                             padding: $px-15;
-    
+
                             h3 {
                                 font-size: $px-18;
                                 line-height: $px-25;
                                 height: auto;
                             }
-            
+
                             p {
                                 font-size: $px-18;
                                 line-height: $px-25;
                                 text-align: left;
                                 height: auto;
                             }
-                            
+
                         }
                     }
-    
+
                     .link-read-more {
                         height: $px-40;
                         margin: $px-15 $px-5 0;
-            
+
                         a {
                             font-size: $px-16;
                             line-height: $px-22;
@@ -300,11 +329,11 @@
                             background: transparent url('../img/Icon-arrow-up-right.png') right center no-repeat;
                         }
                     }
-    
+
                     .owl-theme {
                         .owl-nav {
                             margin: -10px 10px 0;
-    
+
                             button {
                                 &.owl-next {
                                     margin-right: 100px;
@@ -392,6 +421,19 @@
             }
         }
 
+        .sec-08 {
+            .box-form-1 {
+                padding-top: $px-40;
+            }
+
+            .box-form-2 {
+                form {
+                    padding-top: $px-20;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
         .sec-09 {
             .modal {
                 .modal-content {
@@ -404,9 +446,25 @@
 
 // m — Medium Screens
 @media (min-width: 960px) {
+    .sec-08 {
+        .box-form-1 {
+            p {
+                font-size: $px-30;
+            }
+        }
+
+        .box-form-2 {
+            padding: 0 60px;
+
+            form {
+                margin-bottom: $px-30;
+            }
+        }
+    }
+
     footer {
         .sec-07 {
-            .footer {
+            .box-footer {
                 .box-footer-1 {
                     p {
                         font-size: $px-20;
@@ -468,6 +526,41 @@
             }
 
         }
+
+        .sec-08 {
+            .box-form-1 {
+                p {
+                    font-size: 36px;
+                    line-height: $px-40;
+                    padding-left: $px-25;
+                }
+            }
+
+            .box-form-2 {
+                padding: 0 75px;
+                margin-top: 1.5rem;
+            }
+        }
+
+        footer {
+            .sec-07 {
+                .box-footer {
+                    .box-footer-1 {
+                        p {
+                            font-size: $px-20;
+                            text-align: center;
+                            font-family: $poppinsMedium;
+                        }
+
+                        .medias {
+                            span {
+                                padding-left: $px-30;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -476,7 +569,6 @@
     body {
         .sec-01 {
             .stage {
-
                 .scroll {
                     width: 1375px;
 
