@@ -391,6 +391,14 @@
 
             }
         }
+
+        .sec-09 {
+            .modal {
+                .modal-content {
+                    margin-top: calc(#{$px-50} * 3);
+                }
+            }
+        }
     }
 }
 

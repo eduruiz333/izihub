@@ -1,7 +1,24 @@
-// RECUPERA O EMAIL DIGITADO NA TELA ENTEIOR
+// DECLARAÇÃO DE VARIÁVEIS
+const emailInput = document.querySelector('#input-email')
+const inputName = document.querySelector('#input-name')
+const inputTel = document.querySelector('#input-tel')
+const acceptTerms = document.getElementById('check-termos')
 const submitButton = document.querySelector('.get-email')
 const retrievedEmail = localStorage.getItem('email')
-const emailInput = document.querySelector('#input-email')
+
+
+// VERIFICA SE O CAMPO EMAIL ESTÁ PREENCHIDO E FOCA NO CAMPO APROPRIADO
+window.addEventListener('load', function () {
+  if (emailInput.value) {
+    emailInput.classList.add('valid')
+    inputName.focus()
+  } else {
+    emailInput.focus()
+  }
+})
+
+
+// RECUPERA O EMAIL DIGITADO NA TELA ENTEIOR
 if (retrievedEmail) {
   emailInput.value = retrievedEmail
 }
@@ -18,8 +35,6 @@ emailInput.addEventListener('input', function () {
 
 
 // VALIDA SE O CAMPO NOME ESTÁ PREENCHIDO E SE TEM AO MENOS 3 CARACTERES
-const inputName = document.querySelector('#input-name')
-document.onload = inputName.focus()
 inputName.addEventListener('input', function () {
   if (inputName.value.trim() !== '' && inputName.value.length >= 3) {
     inputName.classList.add('valid')
@@ -55,7 +70,6 @@ window.onload = function () {
 
 
 // VALIDA SE O CAMPO TELEFONE ESTÁ PREENCHIDO
-const inputTel = document.querySelector('#input-tel')
 inputTel.addEventListener('input', function () {
   if (inputTel.value.trim() !== '' && inputTel.value.length >= 14) {
     inputTel.classList.add('valid')
@@ -66,7 +80,7 @@ inputTel.addEventListener('input', function () {
 
 
 // VALIDA SE O CHECKBOX TERMOS ESTÁ MARCADO
-document.getElementById('check-termos').addEventListener('click', function () {
+acceptTerms.addEventListener('click', function () {
   if (this.checked) {
     this.classList.add('valid')
   } else {
@@ -75,7 +89,7 @@ document.getElementById('check-termos').addEventListener('click', function () {
 })
 
 
-// VERIFICA SE TODOS OS CAMPOS ESTÃO PREENCHIDOS CORRETAMENTE E EXIBE AS MODAIS APROPRIADAS
+// VERIFICA SE TODOS OS CAMPOS ESTÃO PREENCHIDOS CORRETAMENTE E EXIBE A MODAL APROPRIADA
 document.querySelector('.send').addEventListener('click', function () {
   const inputs = document.querySelectorAll('.required')
   const areAllValid = [...inputs].every(input => input.classList.contains('valid'))
@@ -86,5 +100,8 @@ document.querySelector('.send').addEventListener('click', function () {
   }
 })
 
-// AO ENVIAR O FORMULÁRIO, LIMPAR O LOCALSTORAGE
-// localStorage.removeItem('email')
+// REMOVE A INFORMAÇÃO ARMAZENADA EM LOCALSTORAGE E ENVIA PARA A PÁGINA INICIAL
+document.querySelector('.btn-sucesso').addEventListener('click', function () {
+  localStorage.removeItem('email')
+  window.location = 'index.html'
+})

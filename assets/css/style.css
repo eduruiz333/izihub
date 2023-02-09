@@ -1080,6 +1080,9 @@ footer .sec-07 .footer .box-footer-1 .medias .social-medias li {
     font-size: 0.75rem;
     font-family: "PoppinsMedium", sans-serif;
   }
+  body .sec-09 .modal .modal-content {
+    margin-top: calc(3.125rem * 3);
+  }
 }
 @media (min-width: 960px) {
   footer .sec-07 .footer .box-footer-1 p {
