@@ -569,6 +569,10 @@
                 .scroll {
                     width: 1375px;
 
+                    .card {
+                        width: auto;
+                    }
+
                     .owl-theme {
                         .owl-nav {
                             button {

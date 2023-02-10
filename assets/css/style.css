@@ -1219,6 +1219,9 @@ footer .sec-07 .box-footer .box-footer-1 .medias .social-medias li {
   body .sec-01 .stage .scroll {
     width: 1375px;
   }
+  body .sec-01 .stage .scroll .card {
+    width: auto;
+  }
   body .sec-01 .stage .scroll .owl-theme .owl-nav button.owl-next {
     margin-right: 0;
   }
