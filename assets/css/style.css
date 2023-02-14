@@ -551,6 +551,9 @@ body .sec-06 .accordion-faq .card {
   -webkit-filter: none;
           filter: none;
 }
+body .sec-06 .accordion-faq .card h5 {
+  width: 100%;
+}
 body .sec-06 .accordion-faq .card .card-header,
 body .sec-06 .accordion-faq .card .card-body {
   padding: 0;
@@ -1002,7 +1005,7 @@ footer .sec-07 .box-footer .box-footer-1 .medias .social-medias li {
     line-height: calc(2.813rem);
   }
   body .sec-03 p,
-  body .sec-03 li {
+body .sec-03 li {
     font-family: "poppinsSemiBold", sans-serif;
     font-size: 1.25rem;
     line-height: 1.875rem;

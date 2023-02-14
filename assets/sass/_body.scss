@@ -532,6 +532,10 @@ body {
                 margin-top: $px-20;
                 filter: none;
 
+                h5 {
+                    width: 100%;
+                }
+
                 .card-header,
                 .card-body {
                     padding: 0;
