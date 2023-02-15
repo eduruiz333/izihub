@@ -15,28 +15,20 @@ Selecionar todas as ocorrências em um arquivo: Ctrl + Shift + J
 ==> https://eduruiz333.github.io/izihub/
 
 
+TRILHAS SALESFORCE
 
-TAREFAS
-Fazer animação da seta dos botões
+SALESFORCE B2C COMMERCE PAGE DESIGNER FOR DEVELOPERS
+https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-developers
+
+SALESFORCE B2C COMMERCE PAGE DESIGNER PARA ANUNCIANTES
+https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-merchandiser
+
+
+DESENVOLVER PARA O SALESFORCE B2C COMMERCE
+https://trailhead.salesforce.com/pt-BR/content/learn/trails/develop-for-commerce-cloud
+
+SALESFORCE B2C COMMERCE PARA DESENVOLVEDORES
+https://trailhead.salesforce.com/pt-BR/content/learn/modules/cc-digital-for-developers
 
 
 
-
-a página 2 contém duas modais, utilizando recursos do bootstrap versão 5.2
-
-
-as instruções abaixo são todas referentes à página 2.
-
-Ao carregar a página 2, se o campo email estiver preenchido com o valor da retrievedEmail, aplique neste campo email a classe "valid", caso contrário, aplique a classe "invalid".
-
-escrever um código de validação para o formulário a página 2, ao clicar no botão enviar, sendo que se o usuário alterar o campo email, uma nova validação deverá ser feita, seguindo os mesmos critŕios da validação do campo de e-mail da página 1, quando esses critérios forem atendidos, aplicar neste campo email a classe valid, caso contrário, aplicar a classe invalid
-
-o campo nome deve ser obrigatório, caso esteja preenchido, aplicar neste campo nome a classe valid, caso contrário, aplicar a classe invalid
-
-o campo telefone deve ser obrigatório, utilizando uma máscara deste tipo: (99) 9 9999-9999. Caso o critério da máscara seja atendido, aplicar neste campo telefone a classe valid, caso contrário, aplicar a classe invalid
-
-Dos dois checkbox, apenas o segundo deverá ser marcado obrigatóriamente. Caso seja marcado, aplique a classe valid, caso contrário, aplicar a classe invalid
-
-ao clicar no botão submit, caso todos os campos estejam válidos, o formulário será enviado e a modal com ID "success" deverá ser exibida, utilizando os recursos do bootstrap. ao fechar esta modal, os campos do formulário deverão ser esvaziados e a variável da localStorage deverá ser deletada
-
-ao clicar no botão submit, caso algum dos campos não esteja válido, o formulário não será enviado e a modal com ID "error" deverá ser exibida, utilizando os recursos do bootstrap
