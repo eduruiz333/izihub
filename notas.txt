@@ -31,4 +31,32 @@ SALESFORCE B2C COMMERCE PARA DESENVOLVEDORES
 https://trailhead.salesforce.com/pt-BR/content/learn/modules/cc-digital-for-developers
 
 
+############################################################################################################
+
+VERIFICAR VERSÕES DO BOOTSTRAP E JQUERY, NA BM SÃO ESSAS:
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "cleave.js": "^1.0.2",
+    "flag-icon-css": "^2.3.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "makefile": "0.0.2",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.34.0"
+  },
+
+Os links, Ste vai me mandar, o e-mail também
+
+https://certisign.com.br/izihub
+https://loja.certisign.com.br/izihub
+
+Do blog:O que é biometria? https://blog.certisign.com.br/o-que-e-biometria/?cod_rev=38788O que é assinatura digital? https://blog.certisign.com.br/o-que-e-assinatura-digital/?cod_rev=38788Biometria facial: https://blog.certisign.com.br/biometria-facial-sua-selfie-pode-conter-mais-segredos-do-que-voce-imagina/?cod_rev=38788
+O que é Biometria? - Certisign Explica
+Aprenda mais sobre biometria e conheça a solução da CertiSign.
+O resto das perguntas já mandei pra Gabi!
+essas do blog procurei no blog mesmo
+No finanças pode tirar o link do "veja na prática"
+O do especialista é o script do "a gente te liga"
+Mesma coisa q tá rolando no ssl 
 
